@@ -1,0 +1,7 @@
+{
+  "title": "hola",
+  "counter": {
+    "increment": "incremento",
+    "decrement": "decremento"
+  }
+}
