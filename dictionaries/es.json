@@ -3,5 +3,7 @@
   "counter": {
     "increment": "incremento",
     "decrement": "decremento"
-  }
+  },
+  "about": "sobre mí",
+  "contact": "contacto"
 }
