@@ -22,9 +22,19 @@
   );
   width: 20px;
   height: 20px;
-  transform: translate(-10px, -15px);
+  transform: translate(-10px, -20px);
   background: black;
   animation: followpath 12s linear infinite;
+}
+
+.textGradient {
+  margin: 1em 0;
+  padding: 1.4em;
+  background: linear-gradient(90deg, #4969ed, #3bd86d);
+  font: 900 1.2em sans-serif;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 @keyframes followpath {

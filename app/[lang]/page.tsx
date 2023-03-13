@@ -33,8 +33,10 @@ export default async function Page({
       <p>This page is currently in {lang}</p>
       <Counter dictionary={dictionary.counter} />
       <Banner lang={lang} />
+      {/* <Orbit /> */}
+      <Bio lang={lang} />
+      <Testamonial lang={lang} />
       <ApplicationForm lang={lang} />
-      <Orbit />
     </>
   );
 }
@@ -47,6 +49,97 @@ const Banner = ({ lang }: { lang: Locale }) => {
         <span style={{ textDecoration: 'underline' }}>safe</span> here.
       </h1>
     </header>
+  );
+};
+
+const Bio = ({ lang }: { lang: Locale }) => {
+  return (
+    <div>
+      <div style={{ background: 'black', color: 'white' }}>
+        <h3>Felipe Matamala Practice</h3>
+        <p>
+          Amplifying the reach of psychoanalysis and its benefits. Amplifying
+          the reach of psychoanalysis and its benefits. Amplifying the reach of
+          psychoanalysis and its benefits. Amplifying the reach of
+          psychoanalysis and its benefits. Amplifying the reach of
+          psychoanalysis and its benefits.
+        </p>
+        <p>
+          Amplifying the reach of psychoanalysis and its benefits. Amplifying
+          the reach of psychoanalysis and its benefits. Amplifying the reach of
+          psychoanalysis and its benefits. Amplifying the reach of
+          psychoanalysis and its benefits. Amplifying the reach of
+          psychoanalysis and its benefits.
+        </p>
+        <div>
+          <h4>follow Felipe:</h4>
+          <div>
+            <ul>
+              <li>Insta</li>
+              <li>Linkedin</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style={{ background: '#4969ED' }}>
+        <h4>
+          <Link href={`/${lang}/client-signup`}>Become a Client</Link>
+        </h4>
+        <p>
+          Amplifying the reach of psychoanalysis and its benefits. Amplifying
+          the reach of psychoanalysis and its benefits.{' '}
+        </p>
+        <h4>
+          <Link href={`/${lang}/student-signup`}>Have Felipe supervise me</Link>
+        </h4>
+        <p>
+          Amplifying the reach of psychoanalysis and its benefits. Amplifying
+          the reach of psychoanalysis and its benefits.{' '}
+        </p>
+        <form>
+          <h4>Sign up for newsletter</h4>
+          <p>What value will thye get from signing up?</p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 18"
+              fill="black"
+              aria-hidden="true"
+              // class="d-inline-block position-absolute top-0 left-0 mt-1 color-text-white"
+              height="16"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M2.625 0A2.625 2.625 0 000 2.625v12.75A2.625 2.625 0 002.625 18h18.75A2.625 2.625 0 0024 15.375V3.769 2.625A2.625 2.625 0 0021.375 0H2.625zM21.75 3.105v-.48a.375.375 0 00-.375-.375H2.625a.375.375 0 00-.375.375v.48L12 8.821l9.75-5.716zM2.25 5.714v9.661c0 .207.168.375.375.375h18.75a.375.375 0 00.375-.375V5.714l-9.18 5.381a1.125 1.125 0 01-1.139 0l-9.18-5.381z"
+              ></path>
+            </svg>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              aria-label="Your email address"
+            />
+            {/* <span class="readme-input-border position-relative width-full d-block color-bg-default z-1"></span> */}
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+const Testamonial = ({ lang }: { lang: Locale }) => {
+  return (
+    <div className={styles.readmeBody}>
+      <aside>
+        <p className={styles.textGradient}>
+          I was doing cool stuff—and I could start telling people about it! I
+          would rather put myself out there than find myself at the end of my
+          career, full of regret, wishing I had taken more risks. farts
+        </p>
+      </aside>
+    </div>
   );
 };
 
@@ -67,9 +160,9 @@ const Orbit = () => {
   return (
     <div style={{ maxWidth: '500px' }}>
       <svg
-        width="700"
-        height="450"
-        viewBox="-20 -20 1400 900"
+        width="90vw"
+        height="150"
+        viewBox="-20 0 1200 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
