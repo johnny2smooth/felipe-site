@@ -4,6 +4,10 @@
     "increment": "incremento",
     "decrement": "decremento"
   },
-  "about": "sobre mí",
-  "contact": "contacto"
+  "about": "Sobre mí",
+  "contact": "contacto",
+  "practice": "practico?",
+  "resources": "fuente",
+  "writing": "Obras",
+  "home": "bienvenidos"
 }

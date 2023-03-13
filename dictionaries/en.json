@@ -4,6 +4,10 @@
     "increment": "increment",
     "decrement": "decrement"
   },
-  "about": "about me",
-  "contact": "contact"
+  "about": "about",
+  "contact": "contact",
+  "practice": "practice",
+  "resources": "resources",
+  "writing": "writing",
+  "home": "welcome home"
 }

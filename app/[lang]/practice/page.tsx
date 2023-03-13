@@ -6,6 +6,10 @@ export default async function Page({
 }: {
   params: { lang: Locale };
 }) {
-  let dictionary = await getDictionary(lang);
-  return <>{dictionary.contact}</>;
+  const dictionary = await getDictionary(lang);
+  return (
+    <>
+      <p>{dictionary.practice}</p>
+    </>
+  );
 }

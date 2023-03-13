@@ -1,9 +1,20 @@
 import { getDictionary } from '../../get-dictionary';
 import { Locale } from 'i18n-config';
-import LocaleSwitcher from './locale-switcher';
 import Counter from './counter';
 import styles from './page.module.css';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const dictionary = await getDictionary(lang);
+  return {
+    title: dictionary.home,
+  } as Metadata;
+}
 
 export default async function Page({
   params: { lang },

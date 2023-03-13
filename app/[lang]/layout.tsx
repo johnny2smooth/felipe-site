@@ -1,27 +1,46 @@
 import { i18n } from '@/i18n-config';
 import type { Locale } from '@/i18n-config';
-import type { Metadata } from 'next';
 import LocaleSwitcher from './locale-switcher';
-
-export const metadata: Metadata = {
-  title: 'hello! This will be overwritten when a page below me has a title!',
-};
+import Link from 'next/link';
+import { getDictionary } from '@/get-dictionary';
+import { Metadata } from 'next';
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default function Root({
+export default async function Root({
   children,
   params,
 }: {
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
+  const { lang } = params;
+  const dictionary = await getDictionary(lang);
   return (
-    <html lang={params.lang}>
+    <html lang={lang}>
       <body>
-        <LocaleSwitcher />
+        <header>
+          <LocaleSwitcher />
+          <Link href={`/${lang}`}>Felipe Matamala Home</Link>
+          <nav>
+            <ul>
+              <li>
+                <Link href={`/${lang}/practice`}>{dictionary.practice}</Link>
+              </li>
+              <li>
+                <Link href={`/${lang}/writing`}>{dictionary.writing}</Link>
+              </li>
+              <li>
+                <Link href={`/${lang}/resources`}>{dictionary.resources}</Link>
+              </li>
+              <li>
+                <Link href={`/${lang}/about`}>{dictionary.about}</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
         {children}
       </body>
     </html>
