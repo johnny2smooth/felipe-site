@@ -4,6 +4,7 @@ import LocaleSwitcher from './locale-switcher';
 import Link from 'next/link';
 import { getDictionary } from '@/get-dictionary';
 import { Metadata } from 'next';
+import './global.css';
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));

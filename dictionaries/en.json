@@ -9,5 +9,37 @@
   "practice": "practice",
   "resources": "resources",
   "writing": "writing",
-  "home": "welcome home"
+  "home": "welcome home",
+  "welcome": "welcome",
+  "follow": "Follow Felipe",
+  "becomeClient": "Become a client",
+  "becomeClientContent": "Get help with your mental issues",
+  "becomeStudent": "Have Felipe Supervise me",
+  "becomeStudentContent": "Get help with your mental issues",
+  "newsletterSignup": "Sign up for my newsletter",
+  "newsletterContent": "Get updates on my latest articles, podcasts, and videos",
+  "emailPlaceholder": "Your email address",
+  "subscribe": "Subscribe",
+  "cta": {
+    "title1": "Get help with your mental issues",
+    "title2": "Get help with your mental issues",
+    "title3": "Get help with your mental issues",
+    "body1": "Get help with your mental issues",
+    "body2": "Get help with your mental issues 2",
+    "body3": "Get help with your mental issues"
+  },
+  "signup": {
+    "patient": {
+      "title": "Become a client",
+      "status": "I am currently not accepting new patients",
+      "body": "Get help with your mental issues",
+      "userType": "patient"
+    },
+    "student": {
+      "title": "Have Felipe Supervise me",
+      "status": "I am currently not accepting new students",
+      "body": "Get help with your mental issues",
+      "userType": "student"
+    }
+  }
 }

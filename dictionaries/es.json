@@ -9,5 +9,37 @@
   "practice": "practico?",
   "resources": "fuente",
   "writing": "Obras",
-  "home": "bienvenidos"
+  "home": "bienvenidos",
+  "welcome": "welcome",
+  "follow": "Sigue Felipe",
+  "becomeClient": "Become a client (in spanish)",
+  "becomeClientContent": "Get help with your legal issues (in spanish)",
+  "becomeStudent": "Have Felipe Supervise me (in spanish)",
+  "becomeStudentContent": "Get help with your legal issues (in spanish)",
+  "newsletterSignup": "Sign up for my newsletter (in spanish)",
+  "newsletterContent": "Get updates on my latest articles, podcasts, and videos (in spanish)",
+  "emailPlaceholder": "Your email address (in spanish)",
+  "subscribe": "Subscribe (in spanish)",
+  "cta": {
+    "title1": "Get help with your mental issues(in spanish)",
+    "title2": "Get help with your mental issues(in spanish)",
+    "title3": "Get help with your mental issues(in spanish)",
+    "body1": "Get help with your mental issues(in spanish)",
+    "body2": "Get help with your mental issues 2 (in spanish)(in spanish)",
+    "body3": "Get help with your mental issues (in spanish)"
+  },
+  "signup": {
+    "patient": {
+      "title": "Become a client",
+      "status": "I am currently not accepting new patients",
+      "body": "Get help with your mental issues",
+      "userType": "patient"
+    },
+    "student": {
+      "title": "Have Felipe Supervise me",
+      "status": "I am currently not accepting new students",
+      "body": "Get help with your mental issues",
+      "userType": "student"
+    }
+  }
 }
