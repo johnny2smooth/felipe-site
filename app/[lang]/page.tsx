@@ -14,11 +14,12 @@ export default async function Page({
   const dictionary = await getDictionary(lang);
   return (
     <>
-      <h1>{dictionary.title}</h1>
-      <p>This page is currently in {lang}</p>
-      <Counter dictionary={dictionary.counter} />
+      <h1>{dictionary.home.title}</h1>
       <Banner lang={lang} />
       <Orbit />
+      {dictionary.home.bodyArr.map((body, i) => (
+        <p key={i + `-${body.slice(0, 3)}`}>{body}</p>
+      ))}
       {/* @ts-expect-error Server Component */}
       <CTA
         lang={lang}

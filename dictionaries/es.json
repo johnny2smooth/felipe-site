@@ -5,8 +5,8 @@
     "decrement": "decremento"
   },
   "home": {
-    "title": "casita",
-    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
+    "title": "Felipe Matamala",
+    "description": "Felipe, Psicoanalista, Psicoterapeuta y Supervisor.",
     "banner": "Something to make you feel safe here.",
     "bodyArr": [
       "Gracias por visitar mi sitio web. En esta página encontrarás información con respecto a mi, el recorrido que he realizado como psicoanalista y los servicios que brindo, como psicoanálisis, psicoterapia y supervisión.",
@@ -86,7 +86,7 @@
   },
   "writing": {
     "title": "writing",
-    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
+    "description": "Blog posts, articles, and more",
     "body": "Get help with your mental issues",
     "keywords": [
       "psychoanalysis",

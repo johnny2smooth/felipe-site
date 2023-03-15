@@ -5,7 +5,7 @@
     "decrement": "decrement"
   },
   "home": {
-    "title": "home",
+    "title": "Felipe Matamala",
     "banner": "Something to make you feel safe here.",
     "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "bodyArr": [
@@ -94,7 +94,7 @@
   },
   "writing": {
     "title": "writing",
-    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
+    "description": "Blog posts, articles, and more",
     "body": "Get help with your mental issues",
     "keywords": [
       "psychoanalysis",

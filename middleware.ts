@@ -23,6 +23,7 @@ export default function middleWare(request: NextRequest) {
   if (
     [
       'Ellipse.svg',
+      'circle.svg',
       // Your other files in `public`
     ].includes(pathname)
   )
