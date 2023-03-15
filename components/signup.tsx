@@ -17,11 +17,12 @@ export default async function Signup({
       <form>
         <label htmlFor={signup.userType}>{dictionary.emailPlaceholder}</label>
         <input
-          type="text"
+          type="email"
           name={signup.userType}
           id={signup.userType}
           required
         />
+        <button type="submit">{dictionary.subscribe}</button>
       </form>
     </>
   );

@@ -28,23 +28,23 @@ export default async function Page({
       <h1>{dictionary.title}</h1>
       <ul>
         <li>
-          <Link href={`${lang}/about`}>{dictionary.about}</Link>
+          <Link href={`${lang}/about`}>{dictionary.about.title}</Link>
         </li>
         <li>
-          <Link href={`${lang}/contact`}>{dictionary.contact}</Link>
+          <Link href={`${lang}/contact`}>{dictionary.contact.title}</Link>
         </li>
       </ul>
       <p>This page is currently in {lang}</p>
       <Counter dictionary={dictionary.counter} />
       <Banner lang={lang} />
-      {/* <Orbit /> */}
+      <Orbit />
       {/* @ts-expect-error Server Component */}
       <CTA
         lang={lang}
         title={dictionary.cta.title1}
         bodyArray={[dictionary.cta.body1, dictionary.cta.body2]}
       />
-      <GradientTestamonial quote={dictionary.about} />
+      <GradientTestamonial quote={dictionary.testamonials.person1} />
       {/* @ts-expect-error Server Component */}
       <Signup lang={lang} userType="patient" />
     </>

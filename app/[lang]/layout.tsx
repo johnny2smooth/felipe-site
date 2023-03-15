@@ -28,16 +28,22 @@ export default async function Root({
           <nav>
             <ul>
               <li>
-                <Link href={`/${lang}/practice`}>{dictionary.practice}</Link>
+                <Link href={`/${lang}/practice`}>
+                  {dictionary.practice.title}
+                </Link>
               </li>
               <li>
-                <Link href={`/${lang}/writing`}>{dictionary.writing}</Link>
+                <Link href={`/${lang}/writing`}>
+                  {dictionary.writing.title}
+                </Link>
               </li>
               <li>
-                <Link href={`/${lang}/resources`}>{dictionary.resources}</Link>
+                <Link href={`/${lang}/resources`}>
+                  {dictionary.resources.title}
+                </Link>
               </li>
               <li>
-                <Link href={`/${lang}/about`}>{dictionary.about}</Link>
+                <Link href={`/${lang}/about`}>{dictionary.about.title}</Link>
               </li>
             </ul>
           </nav>

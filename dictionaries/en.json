@@ -4,11 +4,26 @@
     "increment": "increment",
     "decrement": "decrement"
   },
-  "about": "about",
-  "contact": "contact",
-  "practice": "practice",
-  "resources": "resources",
-  "writing": "writing",
+  "about": {
+    "title": "about",
+    "body": "Get help with your mental issues"
+  },
+  "contact": {
+    "title": "contact",
+    "body": "Get help with your mental issues"
+  },
+  "practice": {
+    "title": "practice",
+    "body": "Get help with your mental issues"
+  },
+  "resources": {
+    "title": "resources",
+    "body": "Get help with your mental issues"
+  },
+  "writing": {
+    "title": "writing",
+    "body": "Get help with your mental issues"
+  },
   "home": "welcome home",
   "welcome": "welcome",
   "follow": "Follow Felipe",
@@ -41,5 +56,10 @@
       "body": "Get help with your mental issues",
       "userType": "student"
     }
+  },
+  "testamonials": {
+    "title": "Testimonials",
+    "body": "Get help with your mental issues",
+    "person1": "Get help with your mental issues"
   }
 }

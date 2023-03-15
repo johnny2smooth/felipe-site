@@ -2,10 +2,10 @@ import styles from './styles.module.css';
 
 export default function Orbit() {
   return (
-    <div style={{ maxWidth: '500px' }}>
+    <div style={{ maxWidth: '500px', marginBottom: '100px' }}>
       <svg
         width="90vw"
-        height="150"
+        height="20vh"
         viewBox="-20 0 1200 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

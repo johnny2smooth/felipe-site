@@ -9,7 +9,7 @@ export async function generateMetadata({
 }) {
   const dictionary = await getDictionary(lang);
   return {
-    title: dictionary.practice,
+    title: dictionary.practice.title,
   } as Metadata;
 }
 
