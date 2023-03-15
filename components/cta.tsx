@@ -14,7 +14,7 @@ export default async function CTA({
   const dictionary = await getDictionary(lang);
   return (
     <div>
-      <div style={{ background: 'black', color: 'white' }}>
+      <div className="stack" style={{ background: 'black', color: 'white' }}>
         <h3>{title}</h3>
         {bodyArray.map((content, i) => (
           <div key={i + `${content.slice(1, 5)}`}>
@@ -36,7 +36,7 @@ export default async function CTA({
           </div>
         </div>
       </div>
-      <div style={{ background: '#4969ED' }}>
+      <div className="stack" style={{ background: '#4969ED' }}>
         <h4>
           <Link href={`/${lang}/client-signup`}>{dictionary.becomeClient}</Link>
         </h4>
@@ -50,7 +50,7 @@ export default async function CTA({
         <form>
           <h4>{dictionary.newsletterSignup}</h4>
           <p>{dictionary.newsletterContent}</p>
-          <div>
+          <div className="flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 18"

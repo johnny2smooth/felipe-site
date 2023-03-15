@@ -8,9 +8,9 @@ export default async function Page({
 }) {
   const dictionary = await getDictionary(lang);
   return (
-    <>
+    <div className="stack">
       <h1>{dictionary.writing.title}</h1>
       <h2>{dictionary.writing.description}</h2>
-    </>
+    </div>
   );
 }

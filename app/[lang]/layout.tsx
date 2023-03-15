@@ -3,7 +3,7 @@ import type { Locale, LangParams } from '@/i18n-config';
 import LocaleSwitcher from './locale-switcher';
 import Link from 'next/link';
 import { getDictionary } from '@/get-dictionary';
-import './global.css';
+import './globals.css';
 import metadataGenerator from '@/metadata-generator';
 
 export async function generateStaticParams() {
@@ -25,8 +25,8 @@ export default async function Root({
   const dictionary = await getDictionary(lang);
   return (
     <html lang={lang}>
-      <body>
-        <header>
+      <body className="stack">
+        <header className="">
           <LocaleSwitcher />
           <Link href={`/${lang}`}>Felipe Matamala Home</Link>
           <nav>

@@ -8,11 +8,11 @@ export default async function Page({
 }) {
   const dictionary = await getDictionary(lang);
   return (
-    <>
+    <div className="stack">
       <h1>{dictionary.about.title}</h1>
       {dictionary.about.bodyArr.map((body, i) => (
         <p key={i + `-${body.slice(0, 3)}`}>{body}</p>
       ))}
-    </>
+    </div>
   );
 }

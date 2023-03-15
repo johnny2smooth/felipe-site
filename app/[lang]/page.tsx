@@ -13,7 +13,7 @@ export default async function Page({
 }) {
   const dictionary = await getDictionary(lang);
   return (
-    <>
+    <div className="stack">
       <h1>{dictionary.home.title}</h1>
       <Banner lang={lang} />
       <Orbit />
@@ -29,7 +29,7 @@ export default async function Page({
       <GradientTestamonial quote={dictionary.testamonials.person1} />
       {/* @ts-expect-error Server Component */}
       <Signup lang={lang} userType="patient" />
-    </>
+    </div>
   );
 }
 
