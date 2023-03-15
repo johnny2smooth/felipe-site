@@ -12,7 +12,7 @@ import Signup from '@/components/signup';
 export async function generateMetadata({ params: { lang } }: LangParams) {
   const dictionary = await getDictionary(lang);
   return {
-    title: dictionary.home,
+    title: dictionary.home.title,
   } as Metadata;
 }
 
@@ -26,14 +26,6 @@ export default async function Page({
   return (
     <>
       <h1>{dictionary.title}</h1>
-      <ul>
-        <li>
-          <Link href={`${lang}/about`}>{dictionary.about.title}</Link>
-        </li>
-        <li>
-          <Link href={`${lang}/contact`}>{dictionary.contact.title}</Link>
-        </li>
-      </ul>
       <p>This page is currently in {lang}</p>
       <Counter dictionary={dictionary.counter} />
       <Banner lang={lang} />

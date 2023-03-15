@@ -38,8 +38,8 @@ export default async function Root({
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/resources`}>
-                  {dictionary.resources.title}
+                <Link href={`/${lang}/services`}>
+                  {dictionary.services.title}
                 </Link>
               </li>
               <li>

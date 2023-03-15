@@ -4,9 +4,22 @@
     "increment": "incremento",
     "decrement": "decremento"
   },
+  "home": {
+    "title": "casita",
+    "banner": "Something to make you feel safe here.",
+    "bodyArr": [
+      "Gracias por visitar mi sitio web. En esta página encontrarás información con respecto a mi, el recorrido que he realizado como psicoanalista y los servicios que brindo, como psicoanálisis, psicoterapia y supervisión.",
+      "Creo que en nuestra vida podemos atravesar diversas situaciones dolorosas, cambios abruptos y programados, crisis vitales, experiencias traumáticas, entre otras. Situaciones como esta se hacen difíciles de pensar y hablar, y creo, que el psicoanálisis es un viaje que nos permite transformar y pensar nuestro sufrimiento psíquico, en una experiencia desarrollo personal.",
+      "Transformar las experiencias con el psicoanálisis se apoyan en la gran profundidad e intimidad, que se puede alcanzar junto a otro un mayor conocimiento de nosotros."
+    ]
+  },
   "about": {
     "title": "about",
-    "body": "Get help with your mental issues"
+    "bodyArr": [
+      "Me he formado como Psicólogo y Psicoanalista en Chile, además soy Miembro Titular de la Sociedad Chilena de Psicoanálisis (ICHPA), donde trabajo como Profesor y Supervisor, hasta el día de hoy. ",
+      "He desarrollado mi clínica psicoanalítica en Instituciones públicas y privadas. Me he especializado como psicoterapeuta y como supervisor, en situaciones traumáticas de carácter sexual y situaciones de violencia política. Además, he dictado cursos para profesionales en la Sociedad Chilena de Psicoanálisis (ICHPA), en la Universidad Diego Portales, la Universidad Adolfo Ibáñez, entre otras.",
+      "He participado como expositor en diversos congresos Internacionales en torno al trauma, en países como: Chile, Estados Unidos, Argentina, Colombia, Inglaterra."
+    ]
   },
   "contact": {
     "title": "contact",
@@ -14,17 +27,39 @@
   },
   "practice": {
     "title": "practice",
-    "body": "Get help with your mental issues"
+    "bodyArr": [
+      "Comenzar el proceso psicoanalítico es una forma de crear un espacio nuevo en tu vida. Enfrentar el dolor interno o las situaciones difíciles puede ser increíblemente frustrante y difícil. Incluso cuando intentas pensar en enfrentar el problema, la posibilidad de imaginarte trabajando a través de esa idea podría parecer imposible.",
+      "Creo que evitamos estas ideas como una forma de protegernos a nosotros mismos. Luego esperamos el momento adecuado para hablar con los demás sobre experiencias dolorosas. Pero esos momentos no pueden llegar a menos que seamos intencionales al comenzar la conversación.",
+      "Cuando tomamos la decisión de hablar, nuestra realidad comienza a cambiar."
+    ]
   },
-  "resources": {
-    "title": "resources",
-    "body": "Get help with your mental issues"
+  "services": {
+    "title": "services",
+    "body": "Get help with your mental issues",
+    "psychoanalysis": {
+      "title": "psychoanalysis",
+      "bodyArr": [
+        "Psychoanalysis is a method that allows us to have a deep understanding of ourselves and of our own suffering. Throughout our lives we have distinct experiences which leave their mark on us. We are able to resolve some, but for others we can’t seem to find the answers. Psychoanalysis give us the tools to dive deeply into the most difficult of these experiences. Using methods of free-association and dreamwork to reach unconscious aspects, which in many cases express themselves without us being able to make sense of them. Psychoanalysis requires constant work. Meeting together multiple times per week is characteristic of this work. There is a compromise with oneself and with the process. "
+      ]
+    },
+    "psychotherapy": {
+      "title": "psychotherapy",
+      "bodyArr": [
+        " Although psychotherapy shares similar characteristics to psychoanalysis, like free-association and dreamwork, psychotherapy is more concentrated around specific situations that we want to work through during a specific timeframe. psychotherapy is a method of work that more can more accurately address …"
+      ]
+    },
+    "supervision": {
+      "title": "supervision",
+      "bodyArr": [
+        "Supervision is a way of working that allows the understanding of technical aspects of the therapist and psychoanalyst. Understand our own unconscious thoughts with the patients is a great access  to create a better knowledge of our work. "
+      ]
+    }
   },
   "writing": {
     "title": "writing",
     "body": "Get help with your mental issues"
   },
-  "home": "bienvenidos",
+
   "welcome": "welcome",
   "follow": "Sigue Felipe",
   "becomeClient": "Become a client (in spanish)",

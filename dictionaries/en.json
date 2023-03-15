@@ -4,9 +4,21 @@
     "increment": "increment",
     "decrement": "decrement"
   },
+  "home": {
+    "title": "home",
+    "banner": "Something to make you feel safe here.",
+    "bodyArr": [
+      "Thank you for visit my Website. Here you’ll find information about me and the journey that I’ve been on as a psychoanalyst. Also, you can find the services that I offer in psychoanalysis, psychotherapy and supervision. ",
+      "I believe that when we initiate the psychoanalytical process, we start a personal journey. There are many times when we have experienced disrupting situations. Talking about these moments can be hard, especially when you connect with your own grief and you don't feel prepared to confront it. Through this in company is an option which give to you intimacy and a deeply knowledge about how figure out your present life.",
+      "I believe that in our life we can go through painful situations, abrupt changes, vital crises, and traumatic experiences, amongst other things. Situations like this are difficult to think about, and especially difficult to talk about. Psychoanalysis is a journey that allows us to think through our mental hardships and transform them into an experience of personal development."
+    ]
+  },
   "about": {
     "title": "about",
-    "body": "Get help with your mental issues"
+    "bodyArr": [
+      "My career as a Psychologist and Psychoanalyst has began in Chile. I’m a full member in the Chilean Society of Psychoanalysis (ICHPA), where I work as a professor and supervisor.",
+      "I’ve been worked like a psychotherapist and supervisor in public mental health in Chile and my speciality is in psychic trauma, transmissions of trauma in generations and people who suffered sexual abuse. Also, I’ve presented different papers about these topics in Chile, USA, Argentina, Colombia and United Kingdom."
+    ]
   },
   "contact": {
     "title": "contact",
@@ -14,17 +26,42 @@
   },
   "practice": {
     "title": "practice",
-    "body": "Get help with your mental issues"
+    "bodyArr": [
+      "Starting the psychoanalytic process is a way to create a new space in your life. In sometimes dealing with the pain or difficult situation is so frustrating and hard. Even when you try to think about it, the possibility to imagine passing for that idea could be impossible.",
+      "I believe this is a way to protect to us and wait when the time or something more makes possible speak with others about painful experiences.",
+      "Like traumatic situations, we decided when we want talk -or not-. Actually when we decided talk our reality have been started to change.",
+      "Starting the psychoanalytic process is a way to create a new point of view a deep change in the way to live your life . Dealing with internal pain or difficult situations can be incredibly frustrating and hard. Even when you try to think about confronting the issue, the possibility to imagine working through that idea could seem impossible.",
+      "I believe that we avoid these ideas as a way protect to ourselves. We then wait for the appropriate time to speak with others about painful experiences. But this times may not come unless we are intentional about starting the conversation.",
+      "When we make the choice to talk, our reality begins to change."
+    ]
   },
-  "resources": {
-    "title": "resources",
-    "body": "Get help with your mental issues"
+  "services": {
+    "title": "services",
+    "body": "Get help with your mental issues",
+    "psychoanalysis": {
+      "title": "psychoanalysis",
+      "bodyArr": [
+        "Psychoanalysis is a method that allows us to have a deep understanding of ourselves and of our own suffering. Throughout our lives we have distinct experiences which leave their mark on us. We are able to resolve some, but for others we can’t seem to find the answers. Psychoanalysis give us the tools to dive deeply into the most difficult of these experiences. Using methods of free-association and dreamwork to reach unconscious aspects, which in many cases express themselves without us being able to make sense of them. Psychoanalysis requires constant work. Meeting together multiple times per week is characteristic of this work. There is a compromise with oneself and with the process. "
+      ]
+    },
+    "psychotherapy": {
+      "title": "psychotherapy",
+      "bodyArr": [
+        " Although psychotherapy shares similar characteristics to psychoanalysis, like free-association and dreamwork, psychotherapy is more concentrated around specific situations that we want to work through during a specific timeframe. psychotherapy is a method of work that more can more accurately address …"
+      ]
+    },
+    "supervision": {
+      "title": "supervision",
+      "bodyArr": [
+        "Supervision is a way of working that allows the understanding of technical aspects of the therapist and psychoanalyst. Understand our own unconscious thoughts with the patients is a great access  to create a better knowledge of our work. "
+      ]
+    }
   },
   "writing": {
     "title": "writing",
     "body": "Get help with your mental issues"
   },
-  "home": "welcome home",
+
   "welcome": "welcome",
   "follow": "Follow Felipe",
   "becomeClient": "Become a client",

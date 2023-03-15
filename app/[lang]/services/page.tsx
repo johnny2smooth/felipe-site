@@ -9,7 +9,7 @@ export default async function Page({
   const dictionary = await getDictionary(lang);
   return (
     <>
-      <p>{dictionary.resources.title}</p>
+      <p>{dictionary.services.title}</p>
     </>
   );
 }
