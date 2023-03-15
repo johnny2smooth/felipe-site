@@ -11,7 +11,7 @@ export default async function Signup({
   const dictionary = await getDictionary(lang);
   const signup = dictionary.signup[userType];
   return (
-    <div className="stack">
+    <div className="stack box">
       <h3>{signup.status}</h3>
       <p>{signup.body}</p>
       <form className="stack">

@@ -21,10 +21,10 @@ export default async function CTA({
             <p>{content}</p>
           </div>
         ))}
-        <div>
+        <div className="flex">
           <h4>{dictionary.follow}</h4>
           <div>
-            <ul>
+            <ul className="flex">
               {/* link to correct spots */}
               <li>
                 <a href="/">icon to external</a>
@@ -47,7 +47,7 @@ export default async function CTA({
           </Link>
         </h4>
         <p>{dictionary.becomeStudentContent}</p>
-        <form>
+        <form className="stack">
           <h4>{dictionary.newsletterSignup}</h4>
           <p>{dictionary.newsletterContent}</p>
           <div className="flex">
