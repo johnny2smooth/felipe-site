@@ -1,13 +1,17 @@
 import { i18n } from '@/i18n-config';
-import type { Locale } from '@/i18n-config';
+import type { Locale, LangParams } from '@/i18n-config';
 import LocaleSwitcher from './locale-switcher';
 import Link from 'next/link';
 import { getDictionary } from '@/get-dictionary';
-import { Metadata } from 'next';
 import './global.css';
+import metadataGenerator from '@/metadata-generator';
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
+}
+
+export async function generateMetadata({ params: { lang } }: LangParams) {
+  return await metadataGenerator('home', lang);
 }
 
 export default async function Root({

@@ -7,25 +7,47 @@
   "home": {
     "title": "home",
     "banner": "Something to make you feel safe here.",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "bodyArr": [
       "Thank you for visit my Website. Here you’ll find information about me and the journey that I’ve been on as a psychoanalyst. Also, you can find the services that I offer in psychoanalysis, psychotherapy and supervision. ",
       "I believe that when we initiate the psychoanalytical process, we start a personal journey. There are many times when we have experienced disrupting situations. Talking about these moments can be hard, especially when you connect with your own grief and you don't feel prepared to confront it. Through this in company is an option which give to you intimacy and a deeply knowledge about how figure out your present life.",
       "I believe that in our life we can go through painful situations, abrupt changes, vital crises, and traumatic experiences, amongst other things. Situations like this are difficult to think about, and especially difficult to talk about. Psychoanalysis is a journey that allows us to think through our mental hardships and transform them into an experience of personal development."
+    ],
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
     ]
   },
   "about": {
     "title": "about",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "bodyArr": [
       "My career as a Psychologist and Psychoanalyst has began in Chile. I’m a full member in the Chilean Society of Psychoanalysis (ICHPA), where I work as a professor and supervisor.",
       "I’ve been worked like a psychotherapist and supervisor in public mental health in Chile and my speciality is in psychic trauma, transmissions of trauma in generations and people who suffered sexual abuse. Also, I’ve presented different papers about these topics in Chile, USA, Argentina, Colombia and United Kingdom."
+    ],
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
     ]
   },
   "contact": {
     "title": "contact",
-    "body": "Get help with your mental issues"
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
+    "body": "Get help with your mental issues",
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
+    ]
   },
   "practice": {
     "title": "practice",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "bodyArr": [
       "Starting the psychoanalytic process is a way to create a new space in your life. In sometimes dealing with the pain or difficult situation is so frustrating and hard. Even when you try to think about it, the possibility to imagine passing for that idea could be impossible.",
       "I believe this is a way to protect to us and wait when the time or something more makes possible speak with others about painful experiences.",
@@ -33,11 +55,24 @@
       "Starting the psychoanalytic process is a way to create a new point of view a deep change in the way to live your life . Dealing with internal pain or difficult situations can be incredibly frustrating and hard. Even when you try to think about confronting the issue, the possibility to imagine working through that idea could seem impossible.",
       "I believe that we avoid these ideas as a way protect to ourselves. We then wait for the appropriate time to speak with others about painful experiences. But this times may not come unless we are intentional about starting the conversation.",
       "When we make the choice to talk, our reality begins to change."
+    ],
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
     ]
   },
   "services": {
     "title": "services",
     "body": "Get help with your mental issues",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
+    ],
     "psychoanalysis": {
       "title": "psychoanalysis",
       "bodyArr": [
@@ -59,7 +94,14 @@
   },
   "writing": {
     "title": "writing",
-    "body": "Get help with your mental issues"
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
+    "body": "Get help with your mental issues",
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
+    ]
   },
 
   "welcome": "welcome",

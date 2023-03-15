@@ -1,20 +1,10 @@
 import { getDictionary } from '../../get-dictionary';
-import { Locale, LangParams } from 'i18n-config';
+import { Locale } from 'i18n-config';
 import Counter from './counter';
-import styles from './page.module.css';
-import Link from 'next/link';
-import { Metadata } from 'next';
 import Orbit from '@/components/orbit';
 import GradientTestamonial from '@/components/gradient-testamonial';
 import CTA from '@/components/cta';
 import Signup from '@/components/signup';
-
-export async function generateMetadata({ params: { lang } }: LangParams) {
-  const dictionary = await getDictionary(lang);
-  return {
-    title: dictionary.home.title,
-  } as Metadata;
-}
 
 export default async function Page({
   params: { lang },
@@ -22,7 +12,6 @@ export default async function Page({
   params: { lang: Locale };
 }) {
   const dictionary = await getDictionary(lang);
-
   return (
     <>
       <h1>{dictionary.title}</h1>

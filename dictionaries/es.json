@@ -6,36 +6,65 @@
   },
   "home": {
     "title": "casita",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "banner": "Something to make you feel safe here.",
     "bodyArr": [
       "Gracias por visitar mi sitio web. En esta página encontrarás información con respecto a mi, el recorrido que he realizado como psicoanalista y los servicios que brindo, como psicoanálisis, psicoterapia y supervisión.",
       "Creo que en nuestra vida podemos atravesar diversas situaciones dolorosas, cambios abruptos y programados, crisis vitales, experiencias traumáticas, entre otras. Situaciones como esta se hacen difíciles de pensar y hablar, y creo, que el psicoanálisis es un viaje que nos permite transformar y pensar nuestro sufrimiento psíquico, en una experiencia desarrollo personal.",
       "Transformar las experiencias con el psicoanálisis se apoyan en la gran profundidad e intimidad, que se puede alcanzar junto a otro un mayor conocimiento de nosotros."
+    ],
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
     ]
   },
   "about": {
     "title": "about",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "bodyArr": [
       "Me he formado como Psicólogo y Psicoanalista en Chile, además soy Miembro Titular de la Sociedad Chilena de Psicoanálisis (ICHPA), donde trabajo como Profesor y Supervisor, hasta el día de hoy. ",
       "He desarrollado mi clínica psicoanalítica en Instituciones públicas y privadas. Me he especializado como psicoterapeuta y como supervisor, en situaciones traumáticas de carácter sexual y situaciones de violencia política. Además, he dictado cursos para profesionales en la Sociedad Chilena de Psicoanálisis (ICHPA), en la Universidad Diego Portales, la Universidad Adolfo Ibáñez, entre otras.",
       "He participado como expositor en diversos congresos Internacionales en torno al trauma, en países como: Chile, Estados Unidos, Argentina, Colombia, Inglaterra."
+    ],
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
     ]
   },
   "contact": {
     "title": "contact",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "body": "Get help with your mental issues"
   },
   "practice": {
     "title": "practice",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "bodyArr": [
       "Comenzar el proceso psicoanalítico es una forma de crear un espacio nuevo en tu vida. Enfrentar el dolor interno o las situaciones difíciles puede ser increíblemente frustrante y difícil. Incluso cuando intentas pensar en enfrentar el problema, la posibilidad de imaginarte trabajando a través de esa idea podría parecer imposible.",
       "Creo que evitamos estas ideas como una forma de protegernos a nosotros mismos. Luego esperamos el momento adecuado para hablar con los demás sobre experiencias dolorosas. Pero esos momentos no pueden llegar a menos que seamos intencionales al comenzar la conversación.",
       "Cuando tomamos la decisión de hablar, nuestra realidad comienza a cambiar."
+    ],
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
     ]
   },
   "services": {
     "title": "services",
     "body": "Get help with your mental issues",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
+    ],
     "psychoanalysis": {
       "title": "psychoanalysis",
       "bodyArr": [
@@ -57,7 +86,14 @@
   },
   "writing": {
     "title": "writing",
-    "body": "Get help with your mental issues"
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
+    "body": "Get help with your mental issues",
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
+    ]
   },
 
   "welcome": "welcome",

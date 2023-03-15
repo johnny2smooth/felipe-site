@@ -1,17 +1,14 @@
 import { Locale } from '@/i18n-config';
-import type { Metadata } from 'next';
-import { getDictionary } from '@/get-dictionary';
+import metadataGenerator from '@/metadata-generator';
 
 export async function generateMetadata({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) {
-  const dictionary = await getDictionary(lang);
-  return {
-    title: dictionary.about.title,
-  } as Metadata;
+  return await metadataGenerator('about', lang);
 }
+
 export default function Root({ children }: { children: React.ReactNode }) {
   return <div>{children}</div>;
 }
