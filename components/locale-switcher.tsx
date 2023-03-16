@@ -1,5 +1,4 @@
 'use client';
-
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { i18n } from 'i18n-config';
@@ -12,19 +11,22 @@ export default function LocaleSwitcher() {
     segments[1] = locale;
     return segments.join('/');
   };
+  const currentLocale = pathName?.split('/')[1];
 
   return (
-    <div>
-      <p>Locale switcher:</p>
-      <ul>
-        {i18n.locales.map((locale) => {
-          return (
-            <li key={locale}>
-              <Link href={redirectedPathName(locale)}>{locale}</Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <ul className="">
+      {i18n.locales.map((locale) => {
+        return (
+          <li key={locale}>
+            <Link
+              href={redirectedPathName(locale)}
+              className={`${currentLocale === locale ? 'active' : ''}`}
+            >
+              {locale}
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
   );
 }

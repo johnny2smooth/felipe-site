@@ -1,10 +1,12 @@
 import { i18n } from '@/i18n-config';
 import type { Locale, LangParams } from '@/i18n-config';
-import LocaleSwitcher from './locale-switcher';
+import LocaleSwitcher from '@/components/locale-switcher';
 import Link from 'next/link';
 import { getDictionary } from '@/get-dictionary';
 import './globals.css';
 import metadataGenerator from '@/metadata-generator';
+import Nav from '@/components/nav';
+import '@fontsource/lora';
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -23,34 +25,26 @@ export default async function Root({
 }) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
+  const { practice, writing, services, about } = dictionary;
   return (
     <html lang={lang}>
-      <body className="stack">
-        <header className="">
+      <body className="stack p-4" style={{ fontFamily: '"Lora",serif' }}>
+        <header className="flex start gap-4 items-end">
           <LocaleSwitcher />
-          <Link href={`/${lang}`}>Felipe Matamala Home</Link>
-          <nav>
-            <ul>
-              <li>
-                <Link href={`/${lang}/practice`}>
-                  {dictionary.practice.title}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${lang}/writing`}>
-                  {dictionary.writing.title}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${lang}/services`}>
-                  {dictionary.services.title}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${lang}/about`}>{dictionary.about.title}</Link>
-              </li>
-            </ul>
-          </nav>
+          <div className={`flex justify-end gap-4 flex-wrap`}>
+            <Link href={`/${lang}`} className={`s3`}>
+              Felipe Matamala
+            </Link>
+            <Nav
+              lang={lang}
+              endpoints={[
+                practice.title,
+                writing.title,
+                services.title,
+                about.title,
+              ]}
+            />
+          </div>
         </header>
         {children}
       </body>
