@@ -13,9 +13,13 @@ export default async function CTA({
 }) {
   const dictionary = await getDictionary(lang);
   return (
-    <div>
-      <div className="stack" style={{ background: 'black', color: 'white' }}>
-        <h3>{title}</h3>
+    <div className="flex flex-col mx-auto">
+      <div
+        id="cta-details"
+        className="grow  stack p-4 bg-black text-white rounded-t-md"
+        style={{ background: 'black', color: 'white' }}
+      >
+        <h3 className="s2">{title}</h3>
         {bodyArray.map((content, i) => (
           <div key={i + `${content.slice(1, 5)}`}>
             <p>{content}</p>
@@ -36,25 +40,36 @@ export default async function CTA({
           </div>
         </div>
       </div>
-      <div className="stack" style={{ background: '#4969ED' }}>
-        <h4>
-          <Link href={`/${lang}/client-signup`}>{dictionary.becomeClient}</Link>
-        </h4>
-        <p>{dictionary.becomeClientContent}</p>
-        <h4>
-          <Link href={`/${lang}/student-signup`}>
-            {dictionary.becomeStudent}
-          </Link>
-        </h4>
-        <p>{dictionary.becomeStudentContent}</p>
-        <form className="stack">
+      {/* md:col-span-6 md:row-span-8 row-start-5 md:row-start-1 */}
+      <div
+        id="cta-signup"
+        className="stack grow row-span-full col-span-6 col-end-11 p-4 rounded-b-md bg-blue-500 text-white"
+        style={{ background: '#4969ED', color: 'white' }}
+      >
+        <div>
+          <h4>
+            <Link href={`/${lang}/client-signup`} className={`underline`}>
+              {dictionary.becomeClient} &rarr;
+            </Link>
+          </h4>
+          <p>{dictionary.becomeClientContent}</p>
+        </div>
+        <div>
+          <h4>
+            <Link href={`/${lang}/student-signup`} className={`underline`}>
+              {dictionary.becomeStudent} &rarr;
+            </Link>
+          </h4>
+          <p>{dictionary.becomeStudentContent}</p>
+        </div>
+        <form className="">
           <h4>{dictionary.newsletterSignup}</h4>
           <p>{dictionary.newsletterContent}</p>
-          <div className="flex">
+          <div className="flex flex-wrap items-center gap-2 p-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 18"
-              fill="black"
+              fill="white"
               aria-hidden="true"
               // class="d-inline-block position-absolute top-0 left-0 mt-1 color-text-white"
               height="16"

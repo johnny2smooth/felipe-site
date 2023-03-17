@@ -1,9 +1,5 @@
 {
   "title": "hello",
-  "counter": {
-    "increment": "increment",
-    "decrement": "decrement"
-  },
   "home": {
     "title": "Felipe Matamala",
     "banner": "Something to make you feel safe here.",

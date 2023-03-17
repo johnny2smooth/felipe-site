@@ -10,5 +10,5 @@ export async function generateMetadata({
 }
 
 export default function Root({ children }: { children: React.ReactNode }) {
-  return <div>{children}</div>;
+  return <div className="center">{children}</div>;
 }

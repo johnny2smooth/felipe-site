@@ -20,7 +20,7 @@ export default function LocaleSwitcher() {
           <li key={locale}>
             <Link
               href={redirectedPathName(locale)}
-              className={`${currentLocale === locale ? 'active' : ''}`}
+              className={`${currentLocale === locale ? 'active' : ''} s1`}
             >
               {locale}
             </Link>
