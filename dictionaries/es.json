@@ -1,5 +1,11 @@
 {
   "title": "hola",
+  "nav": {
+    "about": "sobre",
+    "practice": "práctica",
+    "services": "servicios",
+    "writing": "esctrictura"
+  },
   "home": {
     "title": "Felipe Matamala",
     "description": "Felipe, Psicoanalista, Psicoterapeuta y Supervisor.",
@@ -126,7 +132,7 @@
   },
   "testamonials": {
     "title": "Testimonials",
-    "body": "Get help with your mental issues",
-    "person1": "Get help with your mental issues"
+    "body": "I love Felipe so much because he has changed my life.",
+    "person1": "You would not believe how much Felipe has helped me out"
   }
 }

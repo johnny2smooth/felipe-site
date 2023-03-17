@@ -1,5 +1,11 @@
 {
   "title": "hello",
+  "nav": {
+    "about": "about",
+    "practice": "practice",
+    "services": "services",
+    "writing": "writing"
+  },
   "home": {
     "title": "Felipe Matamala",
     "banner": "Something to make you feel safe here.",
@@ -134,7 +140,7 @@
   },
   "testamonials": {
     "title": "Testimonials",
-    "body": "Get help with your mental issues",
-    "person1": "Get help with your mental issues"
+    "body": "I love Felipe so much because he has changed my life.",
+    "person1": "You would not believe how much Felipe has helped me out"
   }
 }

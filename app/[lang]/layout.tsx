@@ -39,12 +39,8 @@ export default async function Root({
             </Link>
             <Nav
               lang={lang}
-              endpoints={[
-                practice.title,
-                writing.title,
-                services.title,
-                about.title,
-              ]}
+              endpoints={['practice', 'about', 'services', 'writing']}
+              translations={dictionary.nav}
             />
           </div>
         </header>

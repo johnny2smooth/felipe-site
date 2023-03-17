@@ -7,13 +7,19 @@ import '@fontsource/red-hat-display';
 export default function Nav({
   lang,
   endpoints,
+  translations,
 }: {
   lang: Locale;
-  endpoints: string[];
+  endpoints: ['practice', 'about', 'services', 'writing'];
+  translations: {
+    about: string;
+    practice: string;
+    services: string;
+    writing: string;
+  };
 }) {
   const pathName = usePathname();
   const currentLocale = pathName?.split('/')[2];
-  console.log(currentLocale);
   return (
     <nav style={{ fontFamily: '"Red Hat Display", sans-serif' }}>
       <ul className="flex flex-wrap gap-3">
@@ -21,22 +27,12 @@ export default function Nav({
           return (
             <li key={endpoint}>
               <Link
-                href={`/${lang}/${
-                  endpoint === 'sobre'
-                    ? 'about'
-                    : endpoint === 'servicios'
-                    ? 'services'
-                    : endpoint === 'práctica'
-                    ? 'practice'
-                    : endpoint === 'escritura'
-                    ? 'writing'
-                    : endpoint
-                }`}
+                href={`/${lang}/${endpoint}`}
                 className={`${
                   currentLocale === endpoint ? 'active' : ''
                 } s1 text-slate-600`}
               >
-                {endpoint}
+                {translations[endpoint]}
               </Link>
             </li>
           );
