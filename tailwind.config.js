@@ -7,7 +7,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        custom: 'minmax(25%, 1fr) auto minmax(25%, 1fr)',
+      },
+      maxWidth: {
+        custom: '1280px',
+      },
+    },
   },
   plugins: [],
 };
