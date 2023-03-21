@@ -5,9 +5,7 @@ import Orbit from '@/components/orbit';
 import GradientTestamonial from '@/components/gradient-testamonial';
 import CTA from '@/components/cta';
 import Signup from '@/components/signup';
-import Image from 'next/image';
-import screenshot from '@/public/screenshot.png';
-import Ellipse from '@/public/Ellipse.svg';
+import Banner from '@/components/banner';
 
 export default async function Page({
   params: { lang },
@@ -18,10 +16,12 @@ export default async function Page({
   return (
     <div className="stack">
       <div className="relative">
-        <Banner lang={lang} />
+        <Banner lang={lang}>
+          Feel <span style={{ textDecoration: 'underline' }}>safe</span> here.
+        </Banner>
         <Orbit />
       </div>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap p-4">
         <div className="stack flex flex-wrap max-w-prose center">
           {dictionary.home.bodyArr.map((body, i) => (
             <p key={i + `-${body.slice(0, 3)}`}>{body}</p>
@@ -40,14 +40,3 @@ export default async function Page({
     </div>
   );
 }
-
-const Banner = ({ lang }: { lang: Locale }) => {
-  return (
-    <header className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-      <h1 className={`s1 md:text-4xl text-[#4969ED]`}>
-        Something to make you feel{' '}
-        <span style={{ textDecoration: 'underline' }}>safe</span> here.
-      </h1>
-    </header>
-  );
-};

@@ -59,7 +59,7 @@ export default function Nav({
       <button
         id="mobile-nav-button"
         onClick={toggleMenu}
-        className="flex items-center justify-center w-10 h-10 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 lg:hidden"
+        className="flex items-center justify-center w-10 h-10 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-50 lg:hidden"
       >
         <span
           className={`block w-6 h-0.5 bg-black transition-all duration-300 ${
@@ -82,24 +82,24 @@ export default function Nav({
 
       <nav
         id="mobile-nav"
-        className={`absolute transition-all duration-300 p-4 z-10 top-full left-0 mt-2 w-full bg-white opacity-90 rounded-md shadow-lg lg:hidden ${
+        className={`absolute transition-all duration-300 p-4 z-10 top-full left-0 mt-2 w-full bg-white opacity-[99] rounded-md shadow-lg lg:hidden border-2 border-solid border-red-50 flex flex-col justify-center items-center ${
           isOpen ? 'block' : 'hidden'
         }`}
       >
         <div className="flex justify-around items-end">
-          <ul className="flex flex-wrap">
+          <ul className="flex flex-wrap text-2xl">
             {endpoints.map((endpoint) => {
               return (
                 <li
                   key={endpoint}
-                  className="block px-4 py-2 hover:bg-gray-200 active:text-red-400"
+                  className="block px-4 py-2 hover:bg-gray-200 active:text-red-400 grow text-center"
                 >
                   <Link
                     href={`/${lang}/${endpoint}`}
                     onClick={toggleMenu}
                     className={`${
                       currentLocale === endpoint ? 'active' : ''
-                    } s0 text-slate-600  active:text-red-400`}
+                    } text-slate-600  active:text-red-400 `}
                   >
                     {translations[endpoint]}
                   </Link>
@@ -107,8 +107,8 @@ export default function Nav({
               );
             })}
           </ul>
-          <LocaleSwitcher />
         </div>
+        <LocaleSwitcher />
       </nav>
 
       {/* Desktop navigation menu */}

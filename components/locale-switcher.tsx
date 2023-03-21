@@ -14,13 +14,15 @@ export default function LocaleSwitcher() {
   const currentLocale = pathName?.split('/')[1];
 
   return (
-    <ul className="">
+    <ul className="flex gap-4">
       {i18n.locales.map((locale) => {
         return (
           <li key={locale}>
             <Link
               href={redirectedPathName(locale)}
-              className={`${currentLocale === locale ? 'active' : ''} s1`}
+              className={`${
+                currentLocale === locale ? 'active' : ''
+              } s1 text-[#32323299] hover:text-red-100`}
             >
               {locale}
             </Link>

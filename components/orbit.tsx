@@ -4,12 +4,12 @@ export default function Orbit() {
   return (
     <div className="center">
       <svg
-        width="95vw"
+        width="92vw"
         height="20vw"
         viewBox="-40 0 1193 175"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className=" max-w-prose"
+        className="max-w-prose"
       >
         <ellipse
           z="0"
