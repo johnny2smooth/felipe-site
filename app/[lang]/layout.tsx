@@ -1,19 +1,17 @@
-import { i18n } from '@/i18n-config';
-import type { Locale, LangParams } from '@/i18n-config';
-import LocaleSwitcher from '@/components/locale-switcher';
-import Link from 'next/link';
-import { getDictionary } from '@/get-dictionary';
-import './globals.css';
-import metadataGenerator from '@/metadata-generator';
-import Nav from '@/components/nav';
-import '@fontsource/lora';
+import { i18n } from "@/i18n-config";
+import type { Locale, LangParams } from "@/i18n-config";
+import { getDictionary } from "@/get-dictionary";
+import "./globals.css";
+import metadataGenerator from "@/metadata-generator";
+import Nav from "@/components/nav";
+import "@fontsource/lora";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
 export async function generateMetadata({ params: { lang } }: LangParams) {
-  return await metadataGenerator('home', lang);
+  return await metadataGenerator("home", lang);
 }
 
 export default async function Root({
@@ -32,7 +30,7 @@ export default async function Root({
         <header className="flex">
           <Nav
             lang={lang}
-            endpoints={['practice', 'about', 'services', 'writing']}
+            endpoints={["practice", "about", "services", "writing"]}
             translations={dictionary.nav}
           />
         </header>

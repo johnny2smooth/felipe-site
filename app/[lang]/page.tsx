@@ -1,11 +1,11 @@
-import { getDictionary } from '../../get-dictionary';
-import { Locale } from 'i18n-config';
-import styles from './page.module.css';
-import Orbit from '@/components/orbit';
-import GradientTestamonial from '@/components/gradient-testamonial';
-import CTA from '@/components/cta';
-import Signup from '@/components/signup';
-import Banner from '@/components/banner';
+import { getDictionary } from "../../get-dictionary";
+import { Locale } from "i18n-config";
+import styles from "./page.module.css";
+import Orbit from "@/components/orbit";
+import GradientTestamonial from "@/components/gradient-testamonial";
+import CTA from "@/components/cta";
+import Signup from "@/components/signup";
+import Banner from "@/components/banner";
 
 export default async function Page({
   params: { lang },
@@ -17,7 +17,9 @@ export default async function Page({
     <div className="stack">
       <div className="relative">
         <Banner lang={lang}>
-          Feel <span style={{ textDecoration: 'underline' }}>safe</span> here.
+          I want to help{" "}
+          <span style={{ textDecoration: "underline" }}>guide you</span> through
+          your personal journey.
         </Banner>
         <Orbit />
       </div>
