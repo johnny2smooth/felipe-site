@@ -92,13 +92,13 @@
     "psychotherapy": {
       "title": "psychotherapy",
       "bodyArr": [
-        " Although psychotherapy shares similar characteristics to psychoanalysis, like free-association and dreamwork, psychotherapy is more concentrated around specific situations that we want to work through during a specific timeframe. psychotherapy is a method of work that more can more accurately address …"
+        "Although psychotherapy shares similar characteristics to psychoanalysis, like free-association and dreamwork, psychotherapy is more concentrated around specific situations that we want to work through during a specific timeframe. psychotherapy is a method of work that more can more accurately address …"
       ]
     },
     "supervision": {
       "title": "supervision",
       "bodyArr": [
-        "Supervision is a way of working that allows the understanding of technical aspects of the therapist and psychoanalyst. Understand our own unconscious thoughts with the patients is a great access  to create a better knowledge of our work. "
+        "Supervision is a way of working that allows the understanding of technical aspects of the therapist and psychoanalyst. I will help you create methodologies to understand your own unconscious thoughts while working with your patients."
       ]
     }
   },
@@ -116,10 +116,10 @@
 
   "welcome": "welcome",
   "follow": "Follow Felipe",
-  "becomeClient": "Become a client",
-  "becomeClientContent": "Get help with your mental issues",
-  "becomeStudent": "Have Felipe Supervise me",
-  "becomeStudentContent": "Get help with your mental issues",
+  "becomeClient": "Become a Client",
+  "becomeClientContent": "I like to chat with my prospective clients before I begin my journey with them. Please tell me a bit about yourself, and then we can schedule a meeting to talk if we are a good fit for eachother.",
+  "becomeStudent": "Supervision Services",
+  "becomeStudentContent": "A",
   "newsletterSignup": "Sign up for my newsletter",
   "newsletterContent": "Get updates on my latest articles, podcasts, and videos",
   "emailPlaceholder": "Your email address",

@@ -13,7 +13,7 @@ export default async function CTA({
 }) {
   const dictionary = await getDictionary(lang);
   return (
-    <div className="flex flex-col mx-auto">
+    <div className="flex flex-col items-center w-full">
       {/* <div
         id="cta-details"
         className="grow  stack p-4 bg-black text-white rounded-t-md"
@@ -42,24 +42,34 @@ export default async function CTA({
       {/* md:col-span-6 md:row-span-8 row-start-5 md:row-start-1 */}
       <div
         id="cta-signup"
-        className="stack grow row-span-full col-span-6 col-end-11 p-4 rounded-b-md bg-[#A4D3FF] text-white"
+        className="stack grow p-4 text-black bg-[#A4D3FF] rounded-md max-w-prose red-hat"
       >
-        <div>
-          <h4>
-            <Link href={`/${lang}/client-signup`} className={`underline`}>
-              {dictionary.becomeClient} &rarr;
-            </Link>
-          </h4>
-          <p>{dictionary.becomeClientContent}</p>
-        </div>
-        <div>
-          <h4>
-            <Link href={`/${lang}/student-signup`} className={`underline`}>
-              {dictionary.becomeStudent} &rarr;
-            </Link>
-          </h4>
-          <p>{dictionary.becomeStudentContent}</p>
-        </div>
+        <h4 className="red-cap">
+          <Link
+            href={`/${lang}/client-signup`}
+            className={`text-2xl underline underline-offset-4 red-cap`}
+          >
+            {dictionary.becomeClient} &rang;
+          </Link>
+        </h4>
+        <p>{dictionary.becomeClientContent}</p>
+        <h4>
+          <Link
+            href={`/${lang}/supervision-signup`}
+            className={`text-2xl underline underline-offset-4`}
+          >
+            {dictionary.becomeStudent} &rarr;
+          </Link>
+        </h4>
+        <p>{dictionary.services.supervision.bodyArr[0]}</p>
+
+        {/* <h4>
+          <Link href={`/${lang}/student-signup`} className={`underline`}>
+            {dictionary.becomeStudent} &rarr;
+          </Link>
+        </h4>
+        <p>{dictionary.becomeStudentContent}</p> */}
+
         {/* <form className="">
           <h4>{dictionary.newsletterSignup}</h4>
           <p>{dictionary.newsletterContent}</p>

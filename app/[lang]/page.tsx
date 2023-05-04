@@ -1,7 +1,6 @@
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "i18n-config";
-import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
+import ReverseFlexCard from "@/components/reverse-flex-card";
 import Orbit from "@/components/orbit";
 import CTA from "@/components/cta";
 import Signup from "@/components/signup";
@@ -17,11 +16,7 @@ export default async function Page({
   return (
     <div className="stack flex-col justify-center items-center px-2">
       <div className="relative">
-        <Banner lang={lang}>
-          I want to help{" "}
-          <span style={{ textDecoration: "underline" }}>guide you</span> through
-          your personal journey.
-        </Banner>
+        <Banner lang={lang}>{dictionary.home.banner}</Banner>
         <Orbit />
       </div>
 
@@ -57,31 +52,3 @@ export default async function Page({
     </div>
   );
 }
-
-const ReverseFlexCard = ({
-  h3,
-  p,
-  link,
-  image,
-}: {
-  h3: string;
-  p: string;
-  link: string;
-  image: StaticImageData;
-}) => {
-  return (
-    <div className="w-full flex flex-wrap-reverse gap-6 justify-center items-center border-b-2 border-[#A4D3FF] border-solid pb-4">
-      <div className="stack max-w-prose">
-        <h3 className="text-4xl">{h3}</h3>
-        <p className="text-lg">{p}</p>
-        <Link
-          href="/services"
-          className="self-end text-lg  border-[#A4D3FF] border-2 border-solid p-2 red-hat "
-        >
-          {link} &rarr;
-        </Link>
-      </div>
-      <Image src={image} alt="placeholder" width={500} height={100} priority />
-    </div>
-  );
-};
