@@ -26,18 +26,18 @@
 }
 
 body {
-  font-family: 'Lora', sans-serif;
+  font-family: "Lora", sans-serif;
   font-size: var(--s0);
   line-height: 1.5;
 }
 
-nav {
-  font-family: 'Red Hat Display', sans-serif;
+nav,
+h3 {
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .active {
-  color: #4969ed;
-  text-decoration: underline;
+  background-color: #a4d3ff;
 }
 
 .s5 {
@@ -52,12 +52,12 @@ nav {
 
 .s3 {
   font-size: var(--s3);
-  line-height: 0.9;
+  line-height: 1.5;
 }
 
 .s2 {
   font-size: var(--s2);
-  line-height: 0.9;
+  line-height: 1.2;
 }
 
 .s1 {

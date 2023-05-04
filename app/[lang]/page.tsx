@@ -1,11 +1,12 @@
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "i18n-config";
-import styles from "./page.module.css";
+import Image from "next/image";
 import Orbit from "@/components/orbit";
 import GradientTestamonial from "@/components/gradient-testamonial";
 import CTA from "@/components/cta";
 import Signup from "@/components/signup";
 import Banner from "@/components/banner";
+import eye from "public/eye.png";
 
 export default async function Page({
   params: { lang },
@@ -23,13 +24,19 @@ export default async function Page({
         </Banner>
         <Orbit />
       </div>
+      <div>
+        <Image src={eye} alt="placeholder" priority />
+        <h3>so much experience</h3>
+      </div>
       <div className="flex flex-wrap p-4">
         <div className="stack flex flex-wrap max-w-prose center">
           {dictionary.home.bodyArr.map((body, i) => (
-            <p key={i + `-${body.slice(0, 3)}`}>{body}</p>
+            <p className="text-lg" key={i + `-${body.slice(0, 3)}`}>
+              {body}
+            </p>
           ))}
         </div>
-        <GradientTestamonial quote={dictionary.testamonials.person1} />
+
         {/* @ts-expect-error Server Component */}
         <CTA
           lang={lang}

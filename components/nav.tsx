@@ -82,33 +82,36 @@ export default function Nav({
 
       <nav
         id="mobile-nav"
-        className={`absolute transition-all duration-300 p-4 z-10 top-full left-0 mt-2 w-full bg-white opacity-[99] rounded-md shadow-lg lg:hidden border-2 border-solid border-[#A4D3FF] flex flex-col justify-center items-center ${
+        className={`absolute transition-all duration-300 p-4 z-10 top-full left-0 mt-2 w-full bg-white opacity-[99] rounded-md shadow-lg lg:hidden border-2 border-solid border-[#A4D3FF] flex flex-col justify-end items-end ${
           isOpen ? "block" : "hidden"
         }`}
       >
-        <div className="flex justify-around items-end">
-          <ul className="flex flex-wrap s1 gap-2">
-            {endpoints.map((endpoint) => {
-              return (
-                <li
-                  key={endpoint}
-                  className="block py-2 hover:bg-gray-200 active:text-red-400 grow text-center"
+        <ul className="flex flex-col s2 gap-4">
+          {endpoints.map((endpoint) => {
+            return (
+              <li
+                key={endpoint}
+                className="block py-2 hover:bg-gray-200 active:text-red-400 grow text-center "
+              >
+                <Link
+                  href={`/${lang}/${endpoint}`}
+                  onClick={toggleMenu}
+                  className={`${
+                    currentLocale === endpoint
+                      ? "border-[#A4D3FF]"
+                      : "border-white"
+                  } text-red px-2 py-2 border-solid border-2 active:text-red-400 `}
                 >
-                  <Link
-                    href={`/${lang}/${endpoint}`}
-                    onClick={toggleMenu}
-                    className={`${
-                      currentLocale === endpoint ? "active" : ""
-                    } text-red   active:text-red-400 `}
-                  >
-                    {translations[endpoint]}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+                  {translations[endpoint][0].toUpperCase() +
+                    translations[endpoint].slice(1)}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        <div className="self-start">
+          <LocaleSwitcher />
         </div>
-        <LocaleSwitcher />
       </nav>
 
       {/* Desktop navigation menu */}
