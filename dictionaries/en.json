@@ -1,20 +1,28 @@
 {
   "title": "hello",
   "nav": {
-    "about": "about",
-    "practice": "practice",
-    "services": "services",
-    "writing": "writing"
+    "about": "About Me",
+    "practice": "Practice",
+    "services": "Services",
+    "writing": "Writing"
   },
   "home": {
     "title": "Felipe Matamala",
-    "banner": "Something to make you feel safe here.",
+    "banner": "I want to help guide you through your personal journey",
     "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
-    "bodyArr": [
-      "Thank you for visit my Website. Here you’ll find information about me and the journey that I’ve been on as a psychoanalyst. Also, you can find the services that I offer in psychoanalysis, psychotherapy and supervision. ",
-      "I believe that when we initiate the psychoanalytical process, we start a personal journey. There are many times when we have experienced disrupting situations. Talking about these moments can be hard, especially when you connect with your own grief and you don't feel prepared to confront it. Through this in company is an option which give to you intimacy and a deeply knowledge about how figure out your present life.",
-      "I believe that in our life we can go through painful situations, abrupt changes, vital crises, and traumatic experiences, amongst other things. Situations like this are difficult to think about, and especially difficult to talk about. Psychoanalysis is a journey that allows us to think through our mental hardships and transform them into an experience of personal development."
-    ],
+    "welcome": {
+      "h3": "Welcome",
+      "p": "Thank you for visiting my website. Here you will find information about me and the journey that I have been on as a psychoanalyst. Also, you can find the services that I offer in psychoanalysis, psychotherapy and supervision."
+    },
+    "process": {
+      "h3": "The Process",
+      "p": "I believe that when we initiate the psychoanalytical process, we start a personal journey. There are many times when we have experienced disrupting situations. Talking about these moments can be hard, especially when you connect with your own grief and you don't feel prepared to confront it. Through this in company is an option which give to you intimacy and a deeply knowledge about how figure out your present life."
+    },
+    "howIHelp": {
+      "h3": "How I Can Help",
+      "p": "We can go through painful situations, abrupt changes, vital crises, and traumatic experiences, amongst other things. Situations like this are difficult to think about, and especially difficult to talk about. Psychoanalysis is a journey that allows us to think through our mental hardships and transform them into an experience of personal development."
+    },
+
     "keywords": [
       "psychoanalysis",
       "psychotherapy",
@@ -117,7 +125,7 @@
   "emailPlaceholder": "Your email address",
   "subscribe": "Subscribe",
   "cta": {
-    "title1": "Get help with your mental issues",
+    "title1": "Are you interested in becoming a client?",
     "title2": "Get help with your mental issues",
     "title3": "Get help with your mental issues",
     "body1": "Get help with your mental issues",

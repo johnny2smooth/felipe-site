@@ -50,8 +50,11 @@ export default function Nav({
   }, [isOpen]);
 
   return (
-    <div className="relative w-full flex justify-start gap-4 mb-4">
-      <div aria-hidden="false" className="flex justify-center items-center">
+    <div className="w-full flex justify-start gap-4 mb-4">
+      <div
+        aria-hidden="false"
+        className="flex justify-center items-center grow"
+      >
         <Link href={`/${lang}`} className={`s4 text-black`}>
           Felipe Matamala
         </Link>
@@ -114,7 +117,6 @@ export default function Nav({
         </div>
       </nav>
 
-      {/* Desktop navigation menu */}
       <nav className="hidden space-x-4 lg:flex lg:items-center">
         <a href="#" className="px-4 py-2 hover:bg-gray-200 rounded-md">
           Home

@@ -26,15 +26,18 @@ export default async function Root({
   const { practice, writing, services, about } = dictionary;
   return (
     <html lang={lang}>
-      <body className="p-4 m-auto" style={{ fontFamily: '"Lora",serif' }}>
-        <header className="flex">
+      <body
+        className="p-4 mx-auto max-w-6xl flex-col  justify-center items-center"
+        style={{ fontFamily: '"Lora",serif' }}
+      >
+        <header className="flex w-full sticky top-0 z-50 bg-gradient-to-b from-white  to-[rgba(255,255,255,.95)] pt-2 ">
           <Nav
             lang={lang}
             endpoints={["practice", "about", "services", "writing"]}
             translations={dictionary.nav}
           />
         </header>
-        <main className="stack">{children}</main>
+        <main className="stack relative">{children}</main>
       </body>
     </html>
   );

@@ -10,11 +10,18 @@
     "title": "Felipe Matamala",
     "description": "Felipe, Psicoanalista, Psicoterapeuta y Supervisor.",
     "banner": "Something to make you feel safe here.",
-    "bodyArr": [
-      "Gracias por visitar mi sitio web. En esta página encontrarás información con respecto a mi, el recorrido que he realizado como psicoanalista y los servicios que brindo, como psicoanálisis, psicoterapia y supervisión.",
-      "Creo que en nuestra vida podemos atravesar diversas situaciones dolorosas, cambios abruptos y programados, crisis vitales, experiencias traumáticas, entre otras. Situaciones como esta se hacen difíciles de pensar y hablar, y creo, que el psicoanálisis es un viaje que nos permite transformar y pensar nuestro sufrimiento psíquico, en una experiencia desarrollo personal.",
-      "Transformar las experiencias con el psicoanálisis se apoyan en la gran profundidad e intimidad, que se puede alcanzar junto a otro un mayor conocimiento de nosotros."
-    ],
+    "welcome": {
+      "h3": "Bienvenidos",
+      "p": "Gracias por visitar mi sitio web. En esta página encontrarás información con respecto a mi, el recorrido que he realizado como psicoanalista y los servicios que brindo, como psicoanálisis, psicoterapia y supervisión."
+    },
+    "process": {
+      "h3": "El Proceso",
+      "p": "Creo que en nuestra vida podemos atravesar diversas situaciones dolorosas, cambios abruptos y programados, crisis vitales, experiencias traumáticas, entre otras. Situaciones como esta se hacen difíciles de pensar y hablar, y creo, que el psicoanálisis es un viaje que nos permite transformar y pensar nuestro sufrimiento psíquico, en una experiencia desarrollo personal."
+    },
+    "howIHelp": {
+      "h3": "Como Ayudo",
+      "p": "Transformar las experiencias con el psicoanálisis se apoyan en la gran profundidad e intimidad, que se puede alcanzar junto a otro un mayor conocimiento de nosotros."
+    },
     "keywords": [
       "psychoanalysis",
       "psychotherapy",
