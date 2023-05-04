@@ -1,6 +1,6 @@
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "i18n-config";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Orbit from "@/components/orbit";
 import CTA from "@/components/cta";
@@ -24,38 +24,28 @@ export default async function Page({
         </Banner>
         <Orbit />
       </div>
-      <div className="flex flex-col">
-        <Image src={eye} alt="placeholder" priority />
+
+      <div className="stack flex flex-col items-center">
+        <ReverseFlexCard
+          h3={dictionary.home.welcome.h3}
+          p={dictionary.home.welcome.p}
+          link={dictionary.nav.services}
+          image={eye}
+        />
+        <ReverseFlexCard
+          h3={dictionary.home.process.h3}
+          p={dictionary.home.process.p}
+          link={dictionary.nav.practice}
+          image={eye}
+        />
+        <ReverseFlexCard
+          h3={dictionary.home.howIHelp.h3}
+          p={dictionary.home.howIHelp.p}
+          link={dictionary.nav.about}
+          image={eye}
+        />
       </div>
-      <div className="stack flex flex-col items-start">
-        <h3 className="text-4xl">{dictionary.home.welcome.h3}</h3>
-        <p className="text-lg">{dictionary.home.welcome.p}</p>
-        <Link
-          href="/services"
-          className="self-end text-lg  border-[#A4D3FF] border-2 border-solid p-2 red-hat "
-        >
-          {dictionary.nav.services} &rarr;
-        </Link>
-
-        <h3 className="text-4xl">{dictionary.home.process.h3}</h3>
-        <p className="text-lg">{dictionary.home.process.p}</p>
-        <Link
-          href="/services"
-          className="self-end text-lg  border-[#A4D3FF] border-2 border-solid p-2 red-hat "
-        >
-          {dictionary.nav.practice} &rarr;
-        </Link>
-
-        <h3 className="text-4xl">{dictionary.home.howIHelp.h3}</h3>
-        <p className="text-lg">{dictionary.home.howIHelp.p}</p>
-        <Link
-          href="/services"
-          className="self-end text-lg  border-[#A4D3FF] border-2 border-solid p-2 red-hat "
-        >
-          {dictionary.nav.about} &rarr;
-        </Link>
-      </div>
-
+      {/*  */}
       {/* @ts-expect-error Server Component */}
       <CTA
         lang={lang}
@@ -67,3 +57,31 @@ export default async function Page({
     </div>
   );
 }
+
+const ReverseFlexCard = ({
+  h3,
+  p,
+  link,
+  image,
+}: {
+  h3: string;
+  p: string;
+  link: string;
+  image: StaticImageData;
+}) => {
+  return (
+    <div className="w-full flex flex-wrap-reverse gap-6 justify-center items-center border-b-2 border-[#A4D3FF] border-solid pb-4">
+      <div className="stack max-w-prose">
+        <h3 className="text-4xl">{h3}</h3>
+        <p className="text-lg">{p}</p>
+        <Link
+          href="/services"
+          className="self-end text-lg  border-[#A4D3FF] border-2 border-solid p-2 red-hat "
+        >
+          {link} &rarr;
+        </Link>
+      </div>
+      <Image src={image} alt="placeholder" width={500} height={100} priority />
+    </div>
+  );
+};

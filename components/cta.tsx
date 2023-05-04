@@ -1,6 +1,6 @@
-import { Locale } from '@/i18n-config';
-import Link from 'next/link';
-import { getDictionary } from '@/get-dictionary';
+import { Locale } from "@/i18n-config";
+import Link from "next/link";
+import { getDictionary } from "@/get-dictionary";
 
 export default async function CTA({
   lang,
@@ -14,7 +14,7 @@ export default async function CTA({
   const dictionary = await getDictionary(lang);
   return (
     <div className="flex flex-col mx-auto">
-      <div
+      {/* <div
         id="cta-details"
         className="grow  stack p-4 bg-black text-white rounded-t-md"
         style={{ background: 'black', color: 'white' }}
@@ -29,7 +29,6 @@ export default async function CTA({
           <h4>{dictionary.follow}</h4>
           <div>
             <ul className="flex">
-              {/* link to correct spots */}
               <li>
                 <a href="/">icon to external</a>
               </li>
@@ -39,12 +38,11 @@ export default async function CTA({
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* md:col-span-6 md:row-span-8 row-start-5 md:row-start-1 */}
       <div
         id="cta-signup"
-        className="stack grow row-span-full col-span-6 col-end-11 p-4 rounded-b-md bg-blue-500 text-white"
-        style={{ background: '#4969ED', color: 'white' }}
+        className="stack grow row-span-full col-span-6 col-end-11 p-4 rounded-b-md bg-[#A4D3FF] text-white"
       >
         <div>
           <h4>
@@ -62,7 +60,7 @@ export default async function CTA({
           </h4>
           <p>{dictionary.becomeStudentContent}</p>
         </div>
-        <form className="">
+        {/* <form className="">
           <h4>{dictionary.newsletterSignup}</h4>
           <p>{dictionary.newsletterContent}</p>
           <div className="flex flex-wrap items-center gap-2 p-2">
@@ -71,7 +69,6 @@ export default async function CTA({
               viewBox="0 0 24 18"
               fill="white"
               aria-hidden="true"
-              // class="d-inline-block position-absolute top-0 left-0 mt-1 color-text-white"
               height="16"
             >
               <path
@@ -86,10 +83,9 @@ export default async function CTA({
               placeholder={dictionary.emailPlaceholder}
               aria-label={dictionary.emailPlaceholder}
             />
-            {/* <span class="readme-input-border position-relative width-full d-block color-bg-default z-1"></span> */}
             <button type="submit">{dictionary.subscribe}</button>
           </div>
-        </form>
+        </form> */}
       </div>
     </div>
   );

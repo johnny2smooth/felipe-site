@@ -51,10 +51,7 @@ export default function Nav({
 
   return (
     <div className="w-full flex justify-start gap-4 mb-4">
-      <div
-        aria-hidden="false"
-        className="flex justify-center items-center grow"
-      >
+      <div aria-hidden="false" className="flex justify-start items-center grow">
         <Link href={`/${lang}`} className={`s4 text-black`}>
           Felipe Matamala
         </Link>
