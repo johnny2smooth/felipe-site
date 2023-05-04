@@ -27,7 +27,7 @@ export default async function Root({
   return (
     <html lang={lang}>
       <body
-        className="p-4 mx-auto max-w-6xl flex-col  justify-center items-center"
+        className="p-4 mx-auto max-w-7xl flex-col  justify-center items-center"
         style={{ fontFamily: '"Lora",serif' }}
       >
         <header className="flex w-full sticky top-0 z-50 bg-gradient-to-b from-white  to-[rgba(255,255,255,.95)] pt-2 ">

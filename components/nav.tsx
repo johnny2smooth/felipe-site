@@ -113,18 +113,21 @@ export default function Nav({
       </nav>
 
       <nav className="hidden space-x-4 lg:flex lg:items-center">
-        <a href="#" className="px-4 py-2 hover:bg-gray-200 rounded-md">
-          Home
-        </a>
-        <a href="#" className="px-4 py-2 hover:bg-gray-200 rounded-md">
-          About
-        </a>
-        <a href="#" className="px-4 py-2 hover:bg-gray-200 rounded-md">
+        <Link href="about" className="px-4 py-2 hover:bg-gray-200 rounded-md">
+          About Me
+        </Link>
+        <Link
+          href="practice"
+          className="px-4 py-2 hover:bg-gray-200 rounded-md"
+        >
+          Practice
+        </Link>
+        <Link
+          href="services"
+          className="px-4 py-2 hover:bg-gray-200 rounded-md"
+        >
           Services
-        </a>
-        <a href="#" className="px-4 py-2 hover:bg-gray-200 rounded-md">
-          Contact
-        </a>
+        </Link>
       </nav>
     </div>
   );

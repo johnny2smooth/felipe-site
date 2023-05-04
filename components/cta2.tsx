@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CTA2() {
   return (
-    <div className="flex flex-col items-start bg-[#a4d3ff99] text-black stack p-4 rounded-md">
+    <div className="flex flex-col items-start bg-[#a4d3ff99] text-black stack p-4 rounded-md max-w-sm">
       <h2 className="text-3xl max-w-prose font-thin red-hat ">
         Amplifying the reach of psychoanalysis and its benefits
       </h2>
