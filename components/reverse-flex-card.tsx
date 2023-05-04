@@ -21,7 +21,7 @@ export default function ReverseFlexCard({
           href="/services"
           className="self-end text-lg  border-[#A4D3FF] border-2 border-solid p-2 red-hat "
         >
-          {link} &rarr;
+          {link} &#8599;
         </Link>
       </div>
       <Image src={image} alt="placeholder" width={500} height={100} priority />

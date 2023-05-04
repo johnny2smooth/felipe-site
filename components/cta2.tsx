@@ -1,23 +1,23 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function CTA2() {
   return (
-    <div className="flex flex-wrap bg-[#4969ed] text-white stack p-4 rounded-md">
-      <h2 className="text-3xl max-w-prose font-thin font-sans">
+    <div className="flex flex-col items-start bg-[#a4d3ff99] text-black stack p-4 rounded-md">
+      <h2 className="text-3xl max-w-prose font-thin red-hat ">
         Amplifying the reach of psychoanalysis and its benefits
       </h2>
-      <p className="text-lg font-sans max-w-prose font-light">
-        No, seriously. Tell me why you are to be trusted? I know that a lot of
-        people struggle to find suitable care which is also personalized.
+      <p className="text-lg red-hat max-w-prose font-light">
+        I strive to be the best guide that I can be for every person who is
+        looking for support. I provide tailored and effective care for all of my
+        clients.
       </p>
-      <p className="text-lg font-sans max-w-prose font-light">
-        A home page is the place where they need to feel like they’re being
-        seen. How can we ease them in? I should really do some user research and
-        find out what it feels like to try to find care. Especially a care where
-        you feel safe.
+      <p className="text-lg red-hat max-w-prose font-light">
+        Please, feel free to reach out to me with any questions. I am well aware
+        of the uncertainties one may feel when asking for help. You can rest
+        assured that I will be able to provide assistance in any way that I can.
       </p>
-      <div className="flex justify-end underline underline-offset-8 text-xl">
-        <Link href="/">learn more &rarr;</Link>
+      <div className="self-end border-2 border-white border-solid text-xl p-2 red-hat">
+        <Link href="/">Contact Me &#8599;</Link>
       </div>
     </div>
   );

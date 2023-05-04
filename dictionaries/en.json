@@ -31,7 +31,7 @@
     ]
   },
   "about": {
-    "title": "about",
+    "title": "About Me",
     "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "bodyArr": [
       "My career as a Psychologist and Psychoanalyst has began in Chile. I’m a full member in the Chilean Society of Psychoanalysis (ICHPA), where I work as a professor and supervisor.",
@@ -56,7 +56,7 @@
     ]
   },
   "practice": {
-    "title": "practice",
+    "title": "My Practice",
     "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "bodyArr": [
       "Starting the psychoanalytic process is a way to create a new space in your life. In sometimes dealing with the pain or difficult situation is so frustrating and hard. Even when you try to think about it, the possibility to imagine passing for that idea could be impossible.",
@@ -74,7 +74,7 @@
     ]
   },
   "services": {
-    "title": "services",
+    "title": "My Services",
     "body": "Get help with your mental issues",
     "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
     "keywords": [
@@ -84,26 +84,26 @@
       "psychoanalyst"
     ],
     "psychoanalysis": {
-      "title": "psychoanalysis",
+      "title": "Psychoanalysis",
       "bodyArr": [
         "Psychoanalysis is a method that allows us to have a deep understanding of ourselves and of our own suffering. Throughout our lives we have distinct experiences which leave their mark on us. We are able to resolve some, but for others we can’t seem to find the answers. Psychoanalysis give us the tools to dive deeply into the most difficult of these experiences. Using methods of free-association and dreamwork to reach unconscious aspects, which in many cases express themselves without us being able to make sense of them. Psychoanalysis requires constant work. Meeting together multiple times per week is characteristic of this work. There is a compromise with oneself and with the process. "
       ]
     },
     "psychotherapy": {
-      "title": "psychotherapy",
+      "title": "Psychotherapy",
       "bodyArr": [
         "Although psychotherapy shares similar characteristics to psychoanalysis, like free-association and dreamwork, psychotherapy is more concentrated around specific situations that we want to work through during a specific timeframe. psychotherapy is a method of work that more can more accurately address …"
       ]
     },
     "supervision": {
-      "title": "supervision",
+      "title": "Supervision",
       "bodyArr": [
         "Supervision is a way of working that allows the understanding of technical aspects of the therapist and psychoanalyst. I will help you create methodologies to understand your own unconscious thoughts while working with your patients."
       ]
     }
   },
   "writing": {
-    "title": "writing",
+    "title": "My Writing",
     "description": "Blog posts, articles, and more",
     "body": "Get help with your mental issues",
     "keywords": [

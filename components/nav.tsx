@@ -12,12 +12,11 @@ export default function Nav({
   translations,
 }: {
   lang: Locale;
-  endpoints: ["practice", "about", "services", "writing"];
+  endpoints: ["practice", "about", "services"];
   translations: {
     about: string;
     practice: string;
     services: string;
-    writing: string;
   };
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,7 +85,7 @@ export default function Nav({
           isOpen ? "block" : "hidden"
         }`}
       >
-        <ul className="flex flex-col s2 gap-4">
+        <ul className="flex flex-col s2 gap-4 items-end">
           {endpoints.map((endpoint) => {
             return (
               <li
@@ -102,8 +101,7 @@ export default function Nav({
                       : "border-white"
                   } text-red px-2 py-2 border-solid border-2 active:text-red-400 `}
                 >
-                  {translations[endpoint][0].toUpperCase() +
-                    translations[endpoint].slice(1)}
+                  {translations[endpoint]}
                 </Link>
               </li>
             );

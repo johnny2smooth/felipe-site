@@ -47,8 +47,6 @@ export default async function Page({
         title={dictionary.cta.title1}
         bodyArray={[dictionary.cta.body1, dictionary.cta.body2]}
       />
-      {/* @ts-expect-error Server Component */}
-      <Signup lang={lang} userType="patient" />
     </div>
   );
 }

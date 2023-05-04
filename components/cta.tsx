@@ -14,32 +14,6 @@ export default async function CTA({
   const dictionary = await getDictionary(lang);
   return (
     <div className="flex flex-col items-center w-full">
-      {/* <div
-        id="cta-details"
-        className="grow  stack p-4 bg-black text-white rounded-t-md"
-        style={{ background: 'black', color: 'white' }}
-      >
-        <h3 className="s2">{title}</h3>
-        {bodyArray.map((content, i) => (
-          <div key={i + `${content.slice(1, 5)}`}>
-            <p>{content}</p>
-          </div>
-        ))}
-        <div className="flex">
-          <h4>{dictionary.follow}</h4>
-          <div>
-            <ul className="flex">
-              <li>
-                <a href="/">icon to external</a>
-              </li>
-              <li>
-                <a href="/">icon to external</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div> */}
-      {/* md:col-span-6 md:row-span-8 row-start-5 md:row-start-1 */}
       <div
         id="cta-signup"
         className="stack grow p-4 text-black bg-[#A4D3FF] rounded-md max-w-prose red-hat"
@@ -47,18 +21,18 @@ export default async function CTA({
         <h4 className="red-cap">
           <Link
             href={`/${lang}/client-signup`}
-            className={`text-2xl underline underline-offset-4 red-cap`}
+            className={`text-2xl underline underline-offset-4 red-cap font-thin`}
           >
-            {dictionary.becomeClient} &rang;
+            {dictionary.becomeClient} &#8599;
           </Link>
         </h4>
         <p>{dictionary.becomeClientContent}</p>
         <h4>
           <Link
             href={`/${lang}/supervision-signup`}
-            className={`text-2xl underline underline-offset-4`}
+            className={`text-2xl underline underline-offset-4 font-thin`}
           >
-            {dictionary.becomeStudent} &rarr;
+            {dictionary.becomeStudent} &#8599;
           </Link>
         </h4>
         <p>{dictionary.services.supervision.bodyArr[0]}</p>

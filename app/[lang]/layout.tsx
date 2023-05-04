@@ -33,7 +33,7 @@ export default async function Root({
         <header className="flex w-full sticky top-0 z-50 bg-gradient-to-b from-white  to-[rgba(255,255,255,.95)] pt-2 ">
           <Nav
             lang={lang}
-            endpoints={["practice", "about", "services", "writing"]}
+            endpoints={["practice", "about", "services"]}
             translations={dictionary.nav}
           />
         </header>
