@@ -21,7 +21,7 @@ export default function Nav({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const pathName = usePathname();
-  const currentLocale = pathName?.split("/")[2];
+  const currentPath = pathName?.split("/")[2];
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -85,7 +85,7 @@ export default function Nav({
           isOpen ? "block" : "hidden"
         }`}
       >
-        <ul className="flex flex-col s2 gap-4 items-end">
+        <ul className="flex flex-col s2 gap-4 items-end font-thin">
           {endpoints.map((endpoint) => {
             return (
               <li
@@ -96,7 +96,7 @@ export default function Nav({
                   href={`/${lang}/${endpoint}`}
                   onClick={toggleMenu}
                   className={`${
-                    currentLocale === endpoint
+                    currentPath === endpoint
                       ? "border-[#A4D3FF]"
                       : "border-white"
                   } text-red px-2 py-2 border-solid border-2 active:text-red-400 `}
@@ -112,22 +112,23 @@ export default function Nav({
         </div>
       </nav>
 
-      <nav className="hidden space-x-4 lg:flex lg:items-center">
-        <Link href="about" className="px-4 py-2 hover:bg-gray-200 rounded-md">
-          About Me
-        </Link>
-        <Link
-          href="practice"
-          className="px-4 py-2 hover:bg-gray-200 rounded-md"
-        >
-          Practice
-        </Link>
-        <Link
-          href="services"
-          className="px-4 py-2 hover:bg-gray-200 rounded-md"
-        >
-          Services
-        </Link>
+      <nav className="hidden space-x-4 lg:flex lg:items-center text-2xl font-thin items-baseline">
+        {endpoints.map((endpoint) => {
+          return (
+            <Link
+              key={endpoint}
+              href={`/${lang}/${endpoint}`}
+              onClick={toggleMenu}
+              className={`${
+                currentPath === endpoint ? "border-[#A4D3FF] " : "border-white"
+              } text-red px-1 py-1 border-solid border-2 active:text-red-400 `}
+            >
+              {translations[endpoint]}
+            </Link>
+          );
+        })}
+
+        <LocaleSwitcher />
       </nav>
     </div>
   );
