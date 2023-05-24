@@ -1,10 +1,10 @@
-"use client";
-import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { Locale } from "@/i18n-config";
-import "@fontsource/red-hat-display";
-import LocaleSwitcher from "./locale-switcher";
+'use client';
+import { usePathname } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { Locale } from '@/i18n-config';
+import '@fontsource/red-hat-display';
+import LocaleSwitcher from './locale-switcher';
 
 export default function Nav({
   lang,
@@ -12,7 +12,7 @@ export default function Nav({
   translations,
 }: {
   lang: Locale;
-  endpoints: ["practice", "about", "services"];
+  endpoints: ['practice', 'about', 'services'];
   translations: {
     about: string;
     practice: string;
@@ -21,7 +21,7 @@ export default function Nav({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const pathName = usePathname();
-  const currentPath = pathName?.split("/")[2];
+  const currentPath = pathName?.split('/')[2];
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -30,28 +30,28 @@ export default function Nav({
   const handleClickOutside = (event: MouseEvent) => {
     if (!event.target) return;
     if (event.target instanceof HTMLElement) {
-      if (event.target.id === "mobile-nav-button") return setIsOpen(true);
-      if (event.target.closest("#mobile-nav")) return;
+      if (event.target.id === 'mobile-nav-button') return setIsOpen(true);
+      if (event.target.closest('#mobile-nav')) return;
       setIsOpen(false);
     }
   };
 
   useEffect(() => {
     if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener('mousedown', handleClickOutside);
     } else {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isOpen]);
 
   return (
     <div className="w-full flex justify-start gap-4 mb-4">
       <div aria-hidden="false" className="flex justify-start items-center grow">
-        <Link href={`/${lang}`} className={`s4 text-black`}>
+        <Link href={`/${lang}`} className={`s3 text-black`}>
           Felipe Matamala
         </Link>
       </div>
@@ -62,17 +62,17 @@ export default function Nav({
       >
         <span
           className={`block w-6 h-0.5 bg-black transition-all duration-300 ${
-            isOpen ? "transform rotate-45" : ""
+            isOpen ? 'transform rotate-45' : ''
           }`}
         ></span>
         <span
           className={`block w-6 h-0.5 bg-black mt-1.5 mb-1.5 transition-all duration-300 ${
-            isOpen ? "opacity-0" : ""
+            isOpen ? 'opacity-0' : ''
           }`}
         ></span>
         <span
           className={`block w-6 h-0.5 bg-black transition-all duration-300 ${
-            isOpen ? "transform -rotate-45" : ""
+            isOpen ? 'transform -rotate-45' : ''
           }`}
         ></span>
       </button>
@@ -82,7 +82,7 @@ export default function Nav({
       <nav
         id="mobile-nav"
         className={`absolute transition-all duration-300 p-4 z-10 top-full left-0 mt-2 w-full bg-white opacity-[99] rounded-md shadow-lg lg:hidden border-2 border-solid border-[#A4D3FF] flex flex-col justify-end items-end ${
-          isOpen ? "block" : "hidden"
+          isOpen ? 'block' : 'hidden'
         }`}
       >
         <ul className="flex flex-col s2 gap-4 items-end font-thin">
@@ -97,8 +97,8 @@ export default function Nav({
                   onClick={toggleMenu}
                   className={`${
                     currentPath === endpoint
-                      ? "border-[#A4D3FF]"
-                      : "border-white"
+                      ? 'border-[#A4D3FF]'
+                      : 'border-white'
                   } text-red px-2 py-2 border-solid border-2 active:text-red-400 `}
                 >
                   {translations[endpoint]}
@@ -120,7 +120,7 @@ export default function Nav({
               href={`/${lang}/${endpoint}`}
               onClick={toggleMenu}
               className={`${
-                currentPath === endpoint ? "border-[#A4D3FF] " : "border-white"
+                currentPath === endpoint ? 'border-[#A4D3FF] ' : 'border-white'
               } text-red px-1 py-1 border-solid border-2 active:text-red-400 `}
             >
               {translations[endpoint]}
