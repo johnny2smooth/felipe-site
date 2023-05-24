@@ -24,7 +24,7 @@ export default function ReverseFlexCard({
           {link} &#8599;
         </Link>
       </div>
-      <Image src={image} alt="placeholder" height={200} width={300} priority />
+      <Image src={image} alt="placeholder" height={200} width={200} priority />
     </div>
   );
 }

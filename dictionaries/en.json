@@ -161,7 +161,18 @@
       "supervision",
       "psychoanalyst"
     ],
-    "userType": "patient"
+    "userType": "patient",
+    "contact": {
+      "title": "Client Sign Up",
+      "required": "Required",
+      "name": "Your Name",
+      "namePlaceholder": "John Bradley",
+      "email": "Your Email",
+      "emailPlaceholder": "johnny@mail.com",
+      "organization": "Your Organization",
+      "organizationPlaceholder": "University of Washington",
+      "contact": "Contact Us"
+    }
   },
   "supervision-signup": {
     "title": "Become a Student",
@@ -173,6 +184,17 @@
       "supervision",
       "psychoanalyst"
     ],
-    "userType": "patient"
+    "userType": "patient",
+    "contact": {
+      "title": "Student Sign Up",
+      "required": "Required",
+      "name": "Your Name",
+      "namePlaceholder": "John Bradley",
+      "email": "Your Email",
+      "emailPlaceholder": "johnny@mail.com",
+      "organization": "Your Organization",
+      "organizationPlaceholder": "University of Washington",
+      "contact": "Contact Us"
+    }
   }
 }

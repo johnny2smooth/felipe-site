@@ -5,9 +5,8 @@ import Orbit from '@/components/orbit';
 import CTA from '@/components/cta';
 import Signup from '@/components/signup';
 import Banner from '@/components/banner';
-import eye from 'public/eye.png';
+import pinkEye from 'public/eye-pink.png';
 import blueEye from 'public/blue-eye.png';
-import funnel from 'public/funnel.png';
 import nova from 'public/nova.png';
 
 export default async function Page({
@@ -28,7 +27,7 @@ export default async function Page({
           h3={dictionary.home.welcome.h3}
           p={dictionary.home.welcome.p}
           link={dictionary.nav.services}
-          image={funnel}
+          image={blueEye}
         />
         <ReverseFlexCard
           h3={dictionary.home.process.h3}
@@ -40,7 +39,7 @@ export default async function Page({
           h3={dictionary.home.howIHelp.h3}
           p={dictionary.home.howIHelp.p}
           link={dictionary.nav.about}
-          image={blueEye}
+          image={pinkEye}
         />
       </div>
       {/*  */}
