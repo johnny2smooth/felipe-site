@@ -1,8 +1,8 @@
-import { getDictionary } from "@/get-dictionary";
-import { Locale } from "@/i18n-config";
-import Banner from "@/components/banner";
-import Orbit from "@/components/orbit";
-import CTA2 from "@/components/cta2";
+import { getDictionary } from '@/get-dictionary';
+import { Locale } from '@/i18n-config';
+import Banner from '@/components/banner';
+import Orbit from '@/components/orbit';
+import CTA2 from '@/components/cta2';
 
 export default async function Page({
   params: { lang },

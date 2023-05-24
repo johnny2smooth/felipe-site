@@ -1,11 +1,14 @@
-import { getDictionary } from "../../get-dictionary";
-import { Locale } from "i18n-config";
-import ReverseFlexCard from "@/components/reverse-flex-card";
-import Orbit from "@/components/orbit";
-import CTA from "@/components/cta";
-import Signup from "@/components/signup";
-import Banner from "@/components/banner";
-import eye from "public/eye.png";
+import { getDictionary } from '../../get-dictionary';
+import { Locale } from 'i18n-config';
+import ReverseFlexCard from '@/components/reverse-flex-card';
+import Orbit from '@/components/orbit';
+import CTA from '@/components/cta';
+import Signup from '@/components/signup';
+import Banner from '@/components/banner';
+import eye from 'public/eye.png';
+import blueEye from 'public/blue-eye.png';
+import funnel from 'public/funnel.png';
+import nova from 'public/nova.png';
 
 export default async function Page({
   params: { lang },
@@ -25,19 +28,19 @@ export default async function Page({
           h3={dictionary.home.welcome.h3}
           p={dictionary.home.welcome.p}
           link={dictionary.nav.services}
-          image={eye}
+          image={funnel}
         />
         <ReverseFlexCard
           h3={dictionary.home.process.h3}
           p={dictionary.home.process.p}
           link={dictionary.nav.practice}
-          image={eye}
+          image={nova}
         />
         <ReverseFlexCard
           h3={dictionary.home.howIHelp.h3}
           p={dictionary.home.howIHelp.p}
           link={dictionary.nav.about}
-          image={eye}
+          image={blueEye}
         />
       </div>
       {/*  */}

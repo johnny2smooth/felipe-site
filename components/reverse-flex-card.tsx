@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
+import Link from 'next/link';
+import Image, { StaticImageData } from 'next/image';
 
 export default function ReverseFlexCard({
   h3,
@@ -19,12 +19,12 @@ export default function ReverseFlexCard({
         <p className="text-lg">{p}</p>
         <Link
           href="/services"
-          className="self-end text-lg  border-[#A4D3FF] border-2 border-solid p-2 red-hat "
+          className="self-end text-lg border-[#A4D3FF] border-2 border-solid p-2 red-hat "
         >
           {link} &#8599;
         </Link>
       </div>
-      <Image src={image} alt="placeholder" width={500} height={100} priority />
+      <Image src={image} alt="placeholder" height={200} width={300} priority />
     </div>
   );
 }
