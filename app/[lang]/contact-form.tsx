@@ -50,7 +50,7 @@ export default function ContactForm({
   return (
     <div
       id="contact"
-      className="stack bg-black p-4 rounded-md w-96 mx-auto min-h-[200px] transition-all"
+      className="stack bg-black p-4 rounded-md w-full max-w-prose mx-auto min-h-[200px] transition-all"
     >
       {submissionStatus === 'submitted' && (
         <div className="flex flex-col w-full items-center gap-4 transition-all">
