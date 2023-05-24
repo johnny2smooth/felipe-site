@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function CTA2() {
   return (
@@ -17,7 +17,7 @@ export default function CTA2() {
         assured that I will be able to provide assistance in any way that I can.
       </p>
       <div className="self-end border-2 border-white border-solid text-xl p-2 red-hat font-thin">
-        <Link href="/">Contact Me &#8599;</Link>
+        <Link href="contact">Contact Me &#8599;</Link>
       </div>
     </div>
   );

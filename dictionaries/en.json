@@ -150,5 +150,29 @@
     "title": "Testimonials",
     "body": "I love Felipe so much because he has changed my life.",
     "person1": "You would not believe how much Felipe has helped me out"
+  },
+  "client-signup": {
+    "title": "Become a client",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
+    "body": "Get help with your mental issues",
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
+    ],
+    "userType": "patient"
+  },
+  "supervision-signup": {
+    "title": "Become a Student",
+    "description": "Felipe Soto, Psicoanalista, Psicoterapeuta y Supervisor.",
+    "body": "Get help with your mental issues",
+    "keywords": [
+      "psychoanalysis",
+      "psychotherapy",
+      "supervision",
+      "psychoanalyst"
+    ],
+    "userType": "patient"
   }
 }

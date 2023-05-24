@@ -3,7 +3,13 @@ import { Locale } from './i18n-config';
 import { getDictionary } from './get-dictionary';
 
 export default async function metadataGenerator(
-  path: 'about' | 'practice' | 'services' | 'writing' | 'home',
+  path:
+    | 'about'
+    | 'practice'
+    | 'services'
+    | 'writing'
+    | 'home'
+    | 'client-signup',
   lang: Locale
 ) {
   const dictionary = await getDictionary(lang);

@@ -1,8 +1,10 @@
-import { getDictionary } from "@/get-dictionary";
-import { Locale } from "@/i18n-config";
-import Banner from "@/components/banner";
-import Orbit from "@/components/orbit";
-import CTA2 from "@/components/cta2";
+import { getDictionary } from '@/get-dictionary';
+import { Locale } from '@/i18n-config';
+import Banner from '@/components/banner';
+import Orbit from '@/components/orbit';
+import CTA2 from '@/components/cta2';
+import nova from 'public/nova.png';
+import Image from 'next/image';
 
 export default async function Page({
   params: { lang },
@@ -17,6 +19,7 @@ export default async function Page({
           <Banner lang={lang}>{dictionary.services.title}</Banner>
           <Orbit />
         </div>
+
         <div className="flex flex-wrap justify-center gap-4 items-start">
           <div className="border-2 border-solid border-[#a4d3ff99] p-4 stack rounded-md max-w-prose">
             <h2 className="text-3xl red-hat font-thin">
@@ -46,6 +49,7 @@ export default async function Page({
           </div>
           <CTA2 />
         </div>
+        <Image src={nova} alt="a geometrically complex figure" height={200} />
       </div>
     </>
   );
